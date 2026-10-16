@@ -1,0 +1,96 @@
+.personajes {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.card {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    transition: transform 0.3s ease;
+    margin-top: 30px;
+    padding-bottom: 5px;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    padding: 10px;
+    border: 1px solid rgb(82, 81, 81);
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.5s;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 1500px) {
+    .productos {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        place-items: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .productos {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        place-items: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .productos {
+        display: grid;
+        grid-template-columns: auto auto;
+        place-items: center;
+    }
+
+        
+}
+
+@media (max-width: 700px) {
+    .productos {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .card h2 {
+        margin: 0 0 10px;
+        font-size: 3rem;
+    }
+
+    .card p {
+        font-size: 1.5rem;
+        color: #555;
+    }
+
+}

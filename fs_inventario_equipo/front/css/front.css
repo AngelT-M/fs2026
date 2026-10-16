@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #f4f6f8;
+    --panel: #ffffff;
+    --text: #24313f;
+    --muted: #667786;
+    --line: #dbe3ea;
+    --primary: #2f5d7c;
+    --primary-dark: #25495f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+header {
+    padding: 16px 20px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+nav,
+main {
+    width: min(96%, 1240px);
+    margin: 0 auto;
+}
+
+nav {
+    padding: 14px 0 0;
+}
+
+main {
+    padding: 18px 0 32px;
+}
+
+main > section,
+main > div,
+main > form {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+}
+
+main > section {
+    padding: 20px;
+}
+
+main > div {
+    padding: 16px;
+}
+
+main > form {
+    width: min(100%, 720px);
+    margin: 0 auto;
+    padding: 18px;
+}
+
+.barra {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+}
+
+.barra_logo {
+    min-width: 110px;
+}
+
+.barra_logo a,
+.barra_link > div > a {
+    display: block;
+    padding: 10px 14px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #f8fafc;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.barra_link {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.barra_link > div {
+    margin: 0;
+}
+
+.barra_link > div > a:hover,
+.barra_logo a:hover,
+.btn:hover,
+button:hover {
+    background: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+}
+
+button,
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 14px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #f8fafc;
+    color: var(--text);
+    cursor: pointer;
+    font: inherit;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+button a {
+    color: inherit;
+}
+
+form {
+    background: var(--panel);
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 600;
+}
+
+input,
+select {
+    width: 100%;
+    max-width: 560px;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #ffffff;
+    color: var(--text);
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid rgba(47, 93, 124, 0.18);
+    border-color: var(--primary);
+}
+
+.home_hero {
+    display: grid;
+    gap: 14px;
+}
+
+.home_meta,
+.home_grid,
+.home_summary {
+    display: grid;
+    gap: 12px;
+}
+
+.home_meta {
+    grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
+}
+
+.home_chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: #f8fafc;
+    border: 1px solid var(--line);
+    color: var(--muted);
+}
+
+.home_summary {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.home_stat,
+.home_card {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.home_stat {
+    padding: 14px;
+}
+
+.home_stat strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+}
+
+.home_stat span,
+.home_card p,
+.page_hint {
+    color: var(--muted);
+}
+
+.home_grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.home_card {
+    padding: 16px;
+}
+
+.home_card h3 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+}
+
+.home_card p {
+    margin: 0;
+    line-height: 1.45;
+}
+
+.page_hint {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.page_actions {
+    margin-top: 14px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 720px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .barra {
+        align-items: stretch;
+    }
+
+    .barra_logo,
+    .barra_link,
+    .barra_link > div,
+    .barra_logo a,
+    .barra_link > div > a {
+        width: 100%;
+    }
+
+    .page_actions {
+        justify-content: stretch;
+    }
+
+    .page_actions .btn {
+        width: 100%;
+    }
+}

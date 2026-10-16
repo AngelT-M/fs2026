@@ -1,0 +1,212 @@
+CRITICAL - 2026-10-01 17:15:52 --> ParseError: syntax error, unexpected single-quoted string "nom_ususario", expecting "]"
+[Method: GET, Route: usuarios]
+in APPPATH\Models\UsuariosModel.php on line 13.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\entidad_educativa\\app\\Models\\UsuariosModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosModel')
+ 3 APPPATH\Controllers\UsuariosController.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosModel')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UsuariosController->mostrarDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:16:07 --> ParseError: syntax error, unexpected single-quoted string "nom_usuario", expecting "]"
+[Method: GET, Route: usuarios]
+in APPPATH\Models\UsuariosModel.php on line 13.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\entidad_educativa\\app\\Models\\UsuariosModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosModel')
+ 3 APPPATH\Controllers\UsuariosController.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosModel')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UsuariosController->mostrarDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:16:08 --> ParseError: syntax error, unexpected single-quoted string "nom_usuario", expecting "]"
+[Method: GET, Route: usuarios]
+in APPPATH\Models\UsuariosModel.php on line 13.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\entidad_educativa\\app\\Models\\UsuariosModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosModel')
+ 3 APPPATH\Controllers\UsuariosController.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosModel')
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UsuariosController->mostrarDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:16:28 --> Error: Class "App\Models\UsuariosModel" not found
+[Method: GET, Route: usuarios]
+in APPPATH\Controllers\UsuariosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UsuariosController->mostrarDatos()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:16:35 --> ParseError: syntax error, unexpected token "return"
+[Method: GET, Route: usuarios]
+in APPPATH\Controllers\UsuariosController.php on line 11.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\entidad_educativa\\app\\Controllers\\UsuariosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UsuariosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UsuariosController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\UsuariosController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('usuarios')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:17:22 --> ParseError: syntax error, unexpected token "return"
+[Method: GET, Route: usuarios]
+in APPPATH\Controllers\UsuariosController.php on line 11.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\entidad_educativa\\app\\Controllers\\UsuariosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UsuariosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UsuariosController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\UsuariosController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('usuarios')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:17:23 --> ParseError: syntax error, unexpected token "return"
+[Method: GET, Route: usuarios]
+in APPPATH\Controllers\UsuariosController.php on line 11.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\entidad_educativa\\app\\Controllers\\UsuariosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UsuariosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UsuariosController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\UsuariosController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('usuarios')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:17:23 --> ParseError: syntax error, unexpected token "return"
+[Method: GET, Route: usuarios]
+in APPPATH\Controllers\UsuariosController.php on line 11.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\entidad_educativa\\app\\Controllers\\UsuariosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UsuariosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UsuariosController')
+ 4 SYSTEMPATH\Router\Router.php(790): class_exists('\\App\\Controllers\\UsuariosController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('usuarios')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:17:55 --> Error: Class "App\Models\UsuariosModel" not found
+[Method: GET, Route: usuarios]
+in APPPATH\Controllers\UsuariosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UsuariosController->mostrarDatos()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:18:10 --> ErrorException: Undefined variable $modelo
+[Method: GET, Route: usuarios]
+in APPPATH\Controllers\UsuariosController.php on line 11.
+ 1 APPPATH\Controllers\UsuariosController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $modelo', 'C:\\xampp\\htdocs\\fs2026\\entidad_educativa\\app\\Controllers\\UsuariosController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UsuariosController->mostrarDatos()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:18:37 --> ParseError: syntax error, unexpected token "endforeach", expecting end of file
+[Method: GET, Route: usuarios]
+in APPPATH\Views\mostrarDatos\usuarios.php on line 33.
+ 1 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('mostrarDatos/usuarios', [], true)
+ 3 APPPATH\Controllers\UsuariosController.php(11): view('mostrarDatos/usuarios', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UsuariosController->mostrarDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:24:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/footer.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/footer.php')
+ 2 SYSTEMPATH\View\View.php(489): CodeIgniter\View\View->render('layouts/footer', null, true)
+ 3 APPPATH\Views\main.php(21): CodeIgniter\View\View->include('layouts/footer')
+ 4 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\fs2026\\entidad_educativa\\app\\Views\\main.php')
+ 5 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('main', [], true)
+ 7 APPPATH\Controllers\Home.php(9): view('main')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:24:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/footer.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/footer.php')
+ 2 SYSTEMPATH\View\View.php(489): CodeIgniter\View\View->render('layouts/footer', null, true)
+ 3 APPPATH\Views\main.php(21): CodeIgniter\View\View->include('layouts/footer')
+ 4 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\fs2026\\entidad_educativa\\app\\Views\\main.php')
+ 5 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('main', [], true)
+ 7 APPPATH\Controllers\Home.php(9): view('main')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:25:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/footer.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/footer.php')
+ 2 SYSTEMPATH\View\View.php(489): CodeIgniter\View\View->render('layouts/footer', null, true)
+ 3 APPPATH\Views\main.php(21): CodeIgniter\View\View->include('layouts/footer')
+ 4 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\fs2026\\entidad_educativa\\app\\Views\\main.php')
+ 5 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('main', [], true)
+ 7 APPPATH\Controllers\Home.php(9): view('main')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:33:21 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+[Method: GET, Route: usuarios]
+in SYSTEMPATH\HTTP\SiteURI.php on line 419.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(393): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(60): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\mostrarDatos\usuarios.php(8): base_url(null)
+ 4 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\fs2026\\entidad_educativa\\app\\Views\\mostrarDatos\\usuarios.php')
+ 5 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('mostrarDatos/usuarios', [], true)
+ 7 APPPATH\Controllers\UsuariosController.php(11): view('mostrarDatos/usuarios', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UsuariosController->mostrarDatos()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-01 17:34:21 --> TypeError: CodeIgniter\HTTP\SiteURI::stringifyRelativePath(): Return value must be of type string, null returned
+[Method: GET, Route: usuarios]
+in SYSTEMPATH\HTTP\SiteURI.php on line 419.
+ 1 SYSTEMPATH\HTTP\SiteURI.php(393): CodeIgniter\HTTP\SiteURI->stringifyRelativePath(null)
+ 2 SYSTEMPATH\Helpers\url_helper.php(60): CodeIgniter\HTTP\SiteURI->baseUrl(null, null)
+ 3 APPPATH\Views\mostrarDatos\usuarios.php(8): base_url(null)
+ 4 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\fs2026\\entidad_educativa\\app\\Views\\mostrarDatos\\usuarios.php')
+ 5 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('mostrarDatos/usuarios', [], true)
+ 7 APPPATH\Controllers\UsuariosController.php(11): view('mostrarDatos/usuarios', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UsuariosController->mostrarDatos()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,57 @@
+.banner {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/014/894/977/non_2x/abstract-technological-background-futuristic-illustration-of-high-computer-and-communication-technologies-on-a-blue-background-high-tech-digital-technology-vector.jpg');
+    width: 100%;
+    height: 100%; /*se ajusta al tamaño establecido en maquetación*/
+   
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+   
+    /*centrar contenido dentro del banner (texto)*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* centra horizontalmente */
+    align-items: center;
+    /* centra verticalmente */
+}
+
+.texto-banner {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.texto-banner h1 {
+    font-size: 4rem;
+}
+
+.texto-banner p {
+    font-size: 2rem;
+}
+
+.texto-banner button {
+  padding: 10px 20px;
+  font-size: 2rem;
+  background-color: rgb(100, 21, 174); /* azul tipo Bootstrap */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.texto-banner button:hover {
+  background-color: rgb(153, 67, 233); /* azul más oscuro al pasar el mouse */
+}
+
+@media (max-width: 700px) {
+    .texto-banner h1 {
+        font-size: 6rem;
+    }
+    .texto-banner p {
+        font-size: 3rem;
+    }
+    .texto-banner button{
+        font-size: 3rem;
+    }
+}
