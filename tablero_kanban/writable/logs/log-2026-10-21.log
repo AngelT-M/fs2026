@@ -1,0 +1,277 @@
+CRITICAL - 2026-10-21 06:55:15 --> ParseError: syntax error, unexpected end of file
+[Method: CLI, Route: make:model/TareasModel]
+in APPPATH\Config\Routes.php on line 15.
+ 1 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 3 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 4 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-21 06:55:23 --> ErrorException: Undefined variable $routes
+[Method: CLI, Route: make:model/TareasModel]
+in APPPATH\Config\Routes.php on line 12.
+ 1 APPPATH\Config\Routes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $routes', 'C:\\xampp\\htdocs\\fs2026\\tablero_kanban\\app\\Config\\Routes.php', 12)
+ 2 SYSTEMPATH\Router\RouteCollection.php(799): CodeIgniter\Router\RouteCollection::{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 APPPATH\Config\Routes.php(9): CodeIgniter\Router\RouteCollection->group('api', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xampp\\htdocs\\fs2026\\tablero_kanban\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 8 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-21 06:55:52 --> ParseError: syntax error, unexpected token "{", expecting "("
+[Method: CLI, Route: make:model/TareasModel]
+in APPPATH\Config\Routes.php on line 12.
+ 1 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 3 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 4 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-21 06:56:06 --> ParseError: syntax error, unexpected token "static", expecting ")"
+[Method: CLI, Route: make:model/TareasModel]
+in APPPATH\Config\Routes.php on line 12.
+ 1 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 3 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 4 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-21 06:56:33 --> ParseError: syntax error, unexpected token "}"
+[Method: CLI, Route: make:model/TareasModel]
+in APPPATH\Config\Routes.php on line 15.
+ 1 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 3 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 4 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-21 06:56:49 --> ErrorException: Undefined variable $routes
+[Method: CLI, Route: make:model/TareasModel]
+in APPPATH\Config\Routes.php on line 12.
+ 1 APPPATH\Config\Routes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $routes', 'C:\\xampp\\htdocs\\fs2026\\tablero_kanban\\app\\Config\\Routes.php', 12)
+ 2 SYSTEMPATH\Router\RouteCollection.php(799): CodeIgniter\Router\RouteCollection::{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 APPPATH\Config\Routes.php(9): CodeIgniter\Router\RouteCollection->group('api', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xampp\\htdocs\\fs2026\\tablero_kanban\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 8 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-21 06:57:00 --> ErrorException: Undefined variable $routes
+[Method: CLI, Route: make:model/TareasModel]
+in APPPATH\Config\Routes.php on line 12.
+ 1 APPPATH\Config\Routes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $routes', 'C:\\xampp\\htdocs\\fs2026\\tablero_kanban\\app\\Config\\Routes.php', 12)
+ 2 SYSTEMPATH\Router\RouteCollection.php(799): CodeIgniter\Router\RouteCollection::{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 APPPATH\Config\Routes.php(9): CodeIgniter\Router\RouteCollection->group('api', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xampp\\htdocs\\fs2026\\tablero_kanban\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 8 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-21 06:57:50 --> ErrorException: Undefined variable $routes
+[Method: CLI, Route: make:model/TareasModel]
+in APPPATH\Config\Routes.php on line 12.
+ 1 APPPATH\Config\Routes.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $routes', 'C:\\xampp\\htdocs\\fs2026\\tablero_kanban\\app\\Config\\Routes.php', 12)
+ 2 SYSTEMPATH\Router\RouteCollection.php(799): CodeIgniter\Router\RouteCollection::{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 APPPATH\Config\Routes.php(9): CodeIgniter\Router\RouteCollection->group('api', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xampp\\htdocs\\fs2026\\tablero_kanban\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 8 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-10-21 07:21:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`u...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`', [], false)
+ 5 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\TareasModel.php(48): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\TareasController.php(21): App\Models\TareasModel->mostrar()
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 07:21:11 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`u...' at line 1
+[Method: GET, Route: api/tareas]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`', [], false)
+ 2 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TareasModel.php(48): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\TareasController.php(21): App\Models\TareasModel->mostrar()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 07:21:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`u...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`', [], false)
+ 4 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\TareasModel.php(48): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\TareasController.php(21): App\Models\TareasModel->mostrar()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 07:21:11 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`u...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`', [], false)
+ 5 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\TareasModel.php(48): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\TareasController.php(21): App\Models\TareasModel->mostrar()
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-21 07:23:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`u...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`', [], false)
+ 5 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\TareasModel.php(48): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\TareasController.php(21): App\Models\TareasModel->mostrar()
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 07:23:08 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`u...' at line 1
+[Method: GET, Route: api/tareas]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`', [], false)
+ 2 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\TareasModel.php(48): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\TareasController.php(21): App\Models\TareasModel->mostrar()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 07:23:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`u...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`', [], false)
+ 4 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\TareasModel.php(48): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\TareasController.php(21): App\Models\TareasModel->mostrar()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 07:23:08 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`u...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `tareas`.`tarea_id` `tareas`.`titulo`, `tareas`.`descripcion`, `categorias`.`categoria_id`, `usuarios`.`usuario_id`, `tareas`.`prioridad`, `tareas`.`estado`, `tareas`.`orden`, `tareas`.`fecha_creacion`
+FROM `tareas`
+JOIN `categorias` ON `categorias`.`categoria_id` = `tareas`.`categoria_id`
+JOIN `usuarios` ON `usuarios`.`usuario_id` = `tareas`.`usuario_id`', [], false)
+ 5 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\TareasModel.php(48): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\TareasController.php(21): App\Models\TareasModel->mostrar()
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-21 07:45:37 --> ErrorException: Undefined array key "nombre"
+[Method: POST, Route: api/usuarioCrear]
+in APPPATH\Models\UsuariosModel.php on line 50.
+ 1 APPPATH\Models\UsuariosModel.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\fs2026\\tablero_kanban\\app\\Models\\UsuariosModel.php', 50)
+ 2 APPPATH\Controllers\UsuariosController.php(40): App\Models\UsuariosModel->crear([...])
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\UsuariosController->crear()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
