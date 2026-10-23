@@ -11,7 +11,7 @@ use CodeIgniter\API\ResponseTrait;
 class CategoriasController extends BaseController
 {
      use ResponseTrait;
-    private CategsoriasModel $modelo;
+    private CategoriasModel $modelo;
     
     public function __construct(){
         $this->modelo = model(CategoriasModel::class);

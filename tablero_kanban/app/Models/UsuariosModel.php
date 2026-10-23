@@ -10,7 +10,7 @@ class UsuariosModel extends Model
     protected $primaryKey       = 'usuario_id';
     protected $returnType       = 'array';
     protected $allowedFields    = [
-        'nombre',
+        'nom_usuario',
         'fecha_nac',
         'numero',
         'email'
@@ -30,7 +30,7 @@ class UsuariosModel extends Model
     {
         $datos = $this->select('
             usuario_id,
-            nombre,
+            nom_usuario,
             fecha_nac,
             numero,
             email    
@@ -47,7 +47,7 @@ class UsuariosModel extends Model
     public function crear(array $datos): int
     {
         $id = $this->insert([
-            'nombre' =>$datos['nombre'],
+            'nom_usuario' =>$datos['nom_usuario'],
             'fecha_nac' =>$datos['fecha_nac'],
             'numero' =>$datos['numero'],
             'email' =>$datos['email']        
