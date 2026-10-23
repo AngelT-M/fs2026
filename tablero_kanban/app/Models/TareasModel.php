@@ -36,8 +36,10 @@ class TareasModel extends Model
             tareas.tarea_id,
             tareas.titulo,
             tareas.descripcion,
+            tareas.categoria_id,
             categorias.nom_categoria,
-            usuarios.nombre,
+            tareas.usuario_id,
+            usuarios.nom_usuario,
             tareas.prioridad,
             tareas.estado,
             tareas.orden,
@@ -45,6 +47,7 @@ class TareasModel extends Model
         ')
         ->join('categorias','categorias.categoria_id = tareas.categoria_id')
         ->join('usuarios', 'usuarios.usuario_id = tareas.usuario_id')
+        ->orderBy('orden', 'ASC')
         ->findAll();
         return array_map([$this, 'formatear'], $datos);
     }
