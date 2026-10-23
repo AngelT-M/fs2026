@@ -1,0 +1,303 @@
+CRITICAL - 2026-10-23 20:34:35 --> ParseError: syntax error, unexpected end of file
+[Method: CLI, Route: make:model/tareasModel]
+in APPPATH\Config\Routes.php on line 11.
+ 1 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 3 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 4 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:51:02 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:51:15 --> ParseError: syntax error, unexpected token ":", expecting ";"
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\ejercici_tokens\\app\\Controllers\\TareasController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\TareasController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\TareasController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\TareasController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('api/tareas')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:51:43 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:51:45 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:52:32 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:52:33 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:53:25 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:53:26 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:53:26 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:54:00 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:54:02 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:54:02 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:54:02 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:54:47 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:54:48 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:54:49 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:54:51 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:54:52 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:54:54 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:54:55 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-23 20:55:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `tarea_i...', Array, false)
+#4 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fs2026\ejercici_tokens\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\fs2026\ejercici_tokens\app\Models\TareasModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\fs2026\ejercici_tokens\app\Controllers\TareasController.php(27): App\Models\TareasModel->mostrar()
+#8 C:\xampp\htdocs\fs2026\ejercici_tokens\system\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+#9 C:\xampp\htdocs\fs2026\ejercici_tokens\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+#10 C:\xampp\htdocs\fs2026\ejercici_tokens\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2026\ejercici_tokens\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `tarea_i...', Array, false)
+#3 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\fs2026\ejercici_tokens\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\fs2026\ejercici_tokens\app\Models\TareasModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\fs2026\ejercici_tokens\app\Controllers\TareasController.php(27): App\Models\TareasModel->mostrar()
+#7 C:\xampp\htdocs\fs2026\ejercici_tokens\system\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+#8 C:\xampp\htdocs\fs2026\ejercici_tokens\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+#9 C:\xampp\htdocs\fs2026\ejercici_tokens\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2026\ejercici_tokens\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-23 20:55:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: api/tareas]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `tarea_id`, `titulo`
+FROM `tareas`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\TareasModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TareasController.php(27): App\Models\TareasModel->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-23 20:55:42 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `tarea_i...', Array, false)
+#4 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fs2026\ejercici_tokens\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\fs2026\ejercici_tokens\app\Models\TareasModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\fs2026\ejercici_tokens\app\Controllers\TareasController.php(27): App\Models\TareasModel->mostrar()
+#8 C:\xampp\htdocs\fs2026\ejercici_tokens\system\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+#9 C:\xampp\htdocs\fs2026\ejercici_tokens\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+#10 C:\xampp\htdocs\fs2026\ejercici_tokens\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2026\ejercici_tokens\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `tarea_i...', Array, false)
+#3 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\fs2026\ejercici_tokens\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\fs2026\ejercici_tokens\app\Models\TareasModel.php(30): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\fs2026\ejercici_tokens\app\Controllers\TareasController.php(27): App\Models\TareasModel->mostrar()
+#7 C:\xampp\htdocs\fs2026\ejercici_tokens\system\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+#8 C:\xampp\htdocs\fs2026\ejercici_tokens\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+#9 C:\xampp\htdocs\fs2026\ejercici_tokens\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2026\ejercici_tokens\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2026\ejercici_tokens\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-23 20:55:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: api/tareas]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `tarea_id`, `titulo`
+FROM `tareas`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\TareasModel.php(30): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\TareasController.php(27): App\Models\TareasModel->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-23 20:59:36 --> Error: Typed property App\Controllers\TareasController::$modelo must not be accessed before initialization
+[Method: GET, Route: api/tareas]
+in APPPATH\Controllers\TareasController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\TareasController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TareasController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

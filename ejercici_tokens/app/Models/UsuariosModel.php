@@ -1,0 +1,69 @@
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class UsuariosModel extends Model
+{
+    protected $table            = 'usuarios';
+    protected $primaryKey       = 'usuario_id';
+    protected $returnType       = 'array';
+    protected $allowedFields    = [
+        'usuario',
+        'contrasena'
+    ];
+
+    private function formatear(array $fila):array{
+        foreach(['usuario_id'] as $campo){
+            if (isset($fila[$campo])) {
+                $fila[$campo] = (int) $fila[$campo];
+            }
+        }
+        return $fila;
+    }
+
+    public function mostrar(): array{
+        $datos = $this->select('
+            usuario_id,
+            contrasena
+        ')
+        ->findAll();
+        return array_map([$this, 'formatear'], $datos);
+    }
+
+    public function buscar(int $id): ?array{
+        $datos = $this->find($id);
+        return $datos ? $this->formatear($datos): null;
+    }
+
+    public function crear(array $datos): ?int
+    {
+        $id = $this->insert([
+            'usuario_id' =>$datos['usuario_id'],
+            'contrasena' =>$datos['contrasena']
+        ]);
+        return $id === false ? null: (int) $id;
+    }
+
+    public function actualizar(int $id, array $datos): bool
+    {
+        $valores = array_intersect_key($datos, array_flip($this->allowedFields));
+        if (! $valores) {
+            return true;
+        }
+        return $this->update($id, $valores);
+    }
+
+
+    public function eliminar(int $id): bool{
+        return $this->delete($id);
+    }
+
+
+
+
+
+
+
+}
