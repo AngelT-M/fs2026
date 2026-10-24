@@ -1,0 +1,21 @@
+CRITICAL - 2026-10-24 14:59:17 --> ParseError: syntax error, unexpected token "{", expecting ")"
+[Method: CLI, Route: make:filter/AuthFilher]
+in APPPATH\Config\Routes.php on line 8.
+ 1 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 3 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 4 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-24 14:59:37 --> ParseError: syntax error, unexpected token "{", expecting ")"
+[Method: CLI, Route: make:filter/AuthFilher]
+in APPPATH\Config\Routes.php on line 8.
+ 1 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 3 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 4 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-24 15:00:34 --> ParseError: syntax error, unexpected token "{", expecting ")"
+[Method: CLI, Route: make:filter/AuthFilher]
+in APPPATH\Config\Routes.php on line 8.
+ 1 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 3 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 4 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
