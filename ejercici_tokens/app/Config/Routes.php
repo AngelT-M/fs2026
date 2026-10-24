@@ -7,7 +7,7 @@ $routes->get('/', 'Home::index');
 
 
 $routes->group('api',['filter'=>'cors'], static function(RouteCollection $routes):void{
-
+    $db = \config\DataBae::connect();
     $routes->options('(:any)', static function(){});
 
     $routes->get('tareas','TareasController::mostrar');

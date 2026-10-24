@@ -27,7 +27,7 @@ abstract class BaseController extends Controller
      * The creation of dynamic property is deprecated in PHP 8.2.
      */
 
-    // protected $session;
+    protected $session;
 
     /**
      * @param CLIRequest|IncomingRequest $request
@@ -45,5 +45,6 @@ abstract class BaseController extends Controller
 
         // Preload any models, libraries, etc, here.
         // $this->session = service('session');
+        $this->session = service('session');
     }
 }
