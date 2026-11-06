@@ -25,6 +25,14 @@ framework are exposed.
 
 **Please** read the user guide for a better explanation of how CI4 works!
 
+## SPA Kanban de prueba
+
+La pantalla SPA está disponible en la raíz de este proyecto: `http://localhost/fs2026/tablero_kanban/public/`.
+Su URL de API se configura en `.env` mediante `KANBAN_API_URL` y por defecto apunta a:
+`http://localhost/fs2026/kanba_bd/api`.
+
+La SPA inicia sesión con `POST /login` usando `correo` y `password`, conserva el token en `sessionStorage` y lo envía como `Authorization: Bearer ...` en las peticiones privadas. Consume proyectos, miembros, categorías, tareas y operaciones de creación, edición, borrado y cambio de estado del API Kanban. Las credenciales visibles en la pantalla (`admin@prueba.com` / `password123`) y el token estático son solo para pruebas.
+
 ## Repository Management
 
 We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.

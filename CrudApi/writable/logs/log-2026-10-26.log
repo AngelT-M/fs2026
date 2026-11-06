@@ -1,0 +1,390 @@
+CRITICAL - 2026-10-26 21:47:07 --> Error: Undefined constant "datos"
+[Method: CLI, Route: make:model/CategoriaModel]
+in APPPATH\Config\Routes.php on line 9.
+ 1 SYSTEMPATH\Router\RouteCollection.php(340): require()
+ 2 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 4 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 5 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-26 21:47:25 --> Error: Undefined constant "datos"
+[Method: CLI, Route: make:model/CategoriaModel]
+in APPPATH\Config\Routes.php on line 9.
+ 1 SYSTEMPATH\Router\RouteCollection.php(340): require()
+ 2 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 4 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 5 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-26 21:47:33 --> Error: Undefined constant "datos"
+[Method: CLI, Route: make:model/CategoriaModel]
+in APPPATH\Config\Routes.php on line 9.
+ 1 SYSTEMPATH\Router\RouteCollection.php(340): require()
+ 2 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 4 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 5 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-26 21:47:40 --> ErrorException: Undefined variable $routes
+[Method: CLI, Route: make:model/CategoriaModel]
+in APPPATH\Config\Routes.php on line 11.
+ 1 APPPATH\Config\Routes.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $routes', 'C:\\Users\\tomas\\Desktop\\CrudApi\\app\\Config\\Routes.php', 11)
+ 2 SYSTEMPATH\Router\RouteCollection.php(694): CodeIgniter\Router\RouteCollection::{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 3 APPPATH\Config\Routes.php(9): CodeIgniter\Router\RouteCollection->group('api', [...], Object(Closure))
+ 4 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\Users\\tomas\\Desktop\\CrudApi\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 8 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-26 22:28:13 --> ParseError: syntax error, unexpected token "return"
+[Method: GET, Route: api/categorias]
+in APPPATH\Controllers\CategoriaController.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\CrudApi\\app\\Controllers\\CategoriaController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CategoriaController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CategoriaController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\CategoriaController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('api/categorias')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 22:28:35 --> ParseError: syntax error, unexpected variable "$id", expecting ")"
+[Method: GET, Route: api/categorias]
+in APPPATH\Models\CategoriaModel.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\CrudApi\\app\\Models\\CategoriaModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoriaModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoriaModel')
+ 4 SYSTEMPATH\Config\Factories.php(306): class_exists('App\\Models\\CategoriaModel')
+ 5 SYSTEMPATH\Config\Factories.php(223): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoriaModel')
+ 6 SYSTEMPATH\Config\Factories.php(163): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoriaModel', [...])
+ 7 SYSTEMPATH\Common.php(850): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\CategoriaController.php(18): model('App\\Models\\CategoriaModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\CategoriaController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 22:30:10 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: api/categorias]
+in APPPATH\Models\CategoriaModel.php on line 64.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\CrudApi\\app\\Models\\CategoriaModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\CategoriaModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\CategoriaModel')
+ 4 SYSTEMPATH\Config\Factories.php(306): class_exists('App\\Models\\CategoriaModel')
+ 5 SYSTEMPATH\Config\Factories.php(223): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\CategoriaModel')
+ 6 SYSTEMPATH\Config\Factories.php(163): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\CategoriaModel', [...])
+ 7 SYSTEMPATH\Common.php(850): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\CategoriaController.php(18): model('App\\Models\\CategoriaModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\CategoriaController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 22:30:23 --> Error: Call to undefined method App\Controllers\CategoriaController::response()
+[Method: GET, Route: api/categorias]
+in APPPATH\Controllers\CategoriaController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CategoriaController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 22:33:03 --> Error: Call to undefined method App\Controllers\CategoriaController::response()
+[Method: GET, Route: api/categorias]
+in APPPATH\Controllers\CategoriaController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CategoriaController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 22:33:32 --> Error: Call to undefined method App\Controllers\CategoriaController::response()
+[Method: GET, Route: api/categorias]
+in APPPATH\Controllers\CategoriaController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CategoriaController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 22:33:33 --> Error: Call to undefined method App\Controllers\CategoriaController::response()
+[Method: GET, Route: api/categorias]
+in APPPATH\Controllers\CategoriaController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CategoriaController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 22:34:08 --> Error: Call to undefined method App\Controllers\CategoriaController::response()
+[Method: GET, Route: api/categorias]
+in APPPATH\Controllers\CategoriaController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CategoriaController->mostrar()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-26 22:34:40 --> Table 'gestion_proyectos.categorias' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT `id_categoria`, `nombre`, `descripcion`, `estado`
+FROM `categorias`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_categoria`, `nombre`, `descripcion`, `estado`
+FROM `categorias`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_categoria`, `nombre`, `descripcion`, `estado`
+FROM `categorias`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `id_categoria`, `nombre`, `descripcion`, `estado`
+FROM `categorias`', [], false)
+ 5 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\CategoriaModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\CategoriaController.php(22): App\Models\CategoriaModel->mostrar()
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CategoriaController->mostrar()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 22:34:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestion_proyectos.categorias' doesn't exist
+[Method: GET, Route: api/categorias]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `id_categoria`, `nombre`, `descripcion`, `estado`
+FROM `categorias`', [], false)
+ 2 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\CategoriaModel.php(37): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\CategoriaController.php(22): App\Models\CategoriaModel->mostrar()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CategoriaController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 22:34:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestion_proyectos.categorias' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_categoria`, `nombre`, `descripcion`, `estado`
+FROM `categorias`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_categoria`, `nombre`, `descripcion`, `estado`
+FROM `categorias`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `id_categoria`, `nombre`, `descripcion`, `estado`
+FROM `categorias`', [], false)
+ 4 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\CategoriaModel.php(37): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\CategoriaController.php(22): App\Models\CategoriaModel->mostrar()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CategoriaController->mostrar()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 22:34:40 --> [Caused by] mysqli_sql_exception: Table 'gestion_proyectos.categorias' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT `id_categoria`, `nombre`, `descripcion`, `estado`
+FROM `categorias`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_categoria`, `nombre`, `descripcion`, `estado`
+FROM `categorias`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_categoria`, `nombre`, `descripcion`, `estado`
+FROM `categorias`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `id_categoria`, `nombre`, `descripcion`, `estado`
+FROM `categorias`', [], false)
+ 5 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\CategoriaModel.php(37): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\CategoriaController.php(22): App\Models\CategoriaModel->mostrar()
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\CategoriaController->mostrar()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 23:06:18 --> ParseError: syntax error, unexpected variable "$this"
+[Method: GET, Route: api/proyectos]
+in APPPATH\Controllers\ProyectoController.php on line 41.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\CrudApi\\app\\Controllers\\ProyectoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProyectoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProyectoController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\ProyectoController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('api/proyectos')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 23:06:41 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: api/proyectos]
+in APPPATH\Models\ProyectosModel.php on line 44.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\CrudApi\\app\\Models\\ProyectosModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ProyectosModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ProyectosModel')
+ 4 SYSTEMPATH\Config\Factories.php(306): class_exists('App\\Models\\ProyectosModel')
+ 5 SYSTEMPATH\Config\Factories.php(223): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\ProyectosModel')
+ 6 SYSTEMPATH\Config\Factories.php(163): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\ProyectosModel', [...])
+ 7 SYSTEMPATH\Common.php(850): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\ProyectoController.php(18): model('App\\Models\\ProyectosModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\ProyectoController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 23:07:25 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: api/proyectos]
+in APPPATH\Controllers\ProyectoController.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\CrudApi\\app\\Controllers\\ProyectoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProyectoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProyectoController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\ProyectoController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('api/proyectos')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 23:07:29 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: api/proyectos]
+in APPPATH\Models\ProyectosModel.php on line 44.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\CrudApi\\app\\Models\\ProyectosModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ProyectosModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ProyectosModel')
+ 4 SYSTEMPATH\Config\Factories.php(306): class_exists('App\\Models\\ProyectosModel')
+ 5 SYSTEMPATH\Config\Factories.php(223): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\ProyectosModel')
+ 6 SYSTEMPATH\Config\Factories.php(163): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\ProyectosModel', [...])
+ 7 SYSTEMPATH\Common.php(850): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\ProyectoController.php(18): model('App\\Models\\ProyectosModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\ProyectoController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 23:08:36 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: api/proyectos]
+in APPPATH\Models\ProyectosModel.php on line 44.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\CrudApi\\app\\Models\\ProyectosModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ProyectosModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ProyectosModel')
+ 4 SYSTEMPATH\Config\Factories.php(306): class_exists('App\\Models\\ProyectosModel')
+ 5 SYSTEMPATH\Config\Factories.php(223): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\ProyectosModel')
+ 6 SYSTEMPATH\Config\Factories.php(163): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\ProyectosModel', [...])
+ 7 SYSTEMPATH\Common.php(850): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\ProyectoController.php(18): model('App\\Models\\ProyectosModel')
+ 9 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\ProyectoController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 23:09:06 --> ErrorException: Redefinition of parameter $datos
+[Method: GET, Route: api/proyectos]
+in APPPATH\Models\ProyectosModel.php on line 64.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-26 23:09:39 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ProyectosModel::finAll
+[Method: GET, Route: api/proyectos]
+in SYSTEMPATH\Model.php on line 759.
+ 1 APPPATH\Models\ProyectosModel.php(42): CodeIgniter\Model->__call('finAll', [])
+ 2 APPPATH\Controllers\ProyectoController.php(22): App\Models\ProyectosModel->mostrar()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ProyectoController->mostrar()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProyectoController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-26 23:09:55 --> Unknown column 'proyectos.fecha_incio' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT `proyectos`.`nombre`, `proyectos`.`descripcion`, `proyectos`.`fecha_incio`, `proyectos`.`fecha_fin`, `proyectos`.`estado`, `usuario`.`nombre`
+FROM `proyectos`
+JOIN `usuario` ON `usuario`.`id_usuario` = `proyectos`.`id_usuario`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proyectos`.`nombre`, `proyectos`.`descripcion`, `proyectos`.`fecha_incio`, `proyectos`.`fecha_fin`, `proyectos`.`estado`, `usuario`.`nombre`
+FROM `proyectos`
+JOIN `usuario` ON `usuario`.`id_usuario` = `proyectos`.`id_usuario`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proyectos`.`nombre`, `proyectos`.`descripcion`, `proyectos`.`fecha_incio`, `proyectos`.`fecha_fin`, `proyectos`.`estado`, `usuario`.`nombre`
+FROM `proyectos`
+JOIN `usuario` ON `usuario`.`id_usuario` = `proyectos`.`id_usuario`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `proyectos`.`nombre`, `proyectos`.`descripcion`, `proyectos`.`fecha_incio`, `proyectos`.`fecha_fin`, `proyectos`.`estado`, `usuario`.`nombre`
+FROM `proyectos`
+JOIN `usuario` ON `usuario`.`id_usuario` = `proyectos`.`id_usuario`', [], false)
+ 5 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ProyectosModel.php(42): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\ProyectoController.php(22): App\Models\ProyectosModel->mostrar()
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ProyectoController->mostrar()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProyectoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 23:09:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proyectos.fecha_incio' in 'field list'
+[Method: GET, Route: api/proyectos]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `proyectos`.`nombre`, `proyectos`.`descripcion`, `proyectos`.`fecha_incio`, `proyectos`.`fecha_fin`, `proyectos`.`estado`, `usuario`.`nombre`
+FROM `proyectos`
+JOIN `usuario` ON `usuario`.`id_usuario` = `proyectos`.`id_usuario`', [], false)
+ 2 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ProyectosModel.php(42): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\ProyectoController.php(22): App\Models\ProyectosModel->mostrar()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ProyectoController->mostrar()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProyectoController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 23:09:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'proyectos.fecha_incio' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proyectos`.`nombre`, `proyectos`.`descripcion`, `proyectos`.`fecha_incio`, `proyectos`.`fecha_fin`, `proyectos`.`estado`, `usuario`.`nombre`
+FROM `proyectos`
+JOIN `usuario` ON `usuario`.`id_usuario` = `proyectos`.`id_usuario`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proyectos`.`nombre`, `proyectos`.`descripcion`, `proyectos`.`fecha_incio`, `proyectos`.`fecha_fin`, `proyectos`.`estado`, `usuario`.`nombre`
+FROM `proyectos`
+JOIN `usuario` ON `usuario`.`id_usuario` = `proyectos`.`id_usuario`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `proyectos`.`nombre`, `proyectos`.`descripcion`, `proyectos`.`fecha_incio`, `proyectos`.`fecha_fin`, `proyectos`.`estado`, `usuario`.`nombre`
+FROM `proyectos`
+JOIN `usuario` ON `usuario`.`id_usuario` = `proyectos`.`id_usuario`', [], false)
+ 4 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ProyectosModel.php(42): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\ProyectoController.php(22): App\Models\ProyectosModel->mostrar()
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ProyectoController->mostrar()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProyectoController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 23:09:55 --> [Caused by] mysqli_sql_exception: Unknown column 'proyectos.fecha_incio' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT `proyectos`.`nombre`, `proyectos`.`descripcion`, `proyectos`.`fecha_incio`, `proyectos`.`fecha_fin`, `proyectos`.`estado`, `usuario`.`nombre`
+FROM `proyectos`
+JOIN `usuario` ON `usuario`.`id_usuario` = `proyectos`.`id_usuario`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proyectos`.`nombre`, `proyectos`.`descripcion`, `proyectos`.`fecha_incio`, `proyectos`.`fecha_fin`, `proyectos`.`estado`, `usuario`.`nombre`
+FROM `proyectos`
+JOIN `usuario` ON `usuario`.`id_usuario` = `proyectos`.`id_usuario`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proyectos`.`nombre`, `proyectos`.`descripcion`, `proyectos`.`fecha_incio`, `proyectos`.`fecha_fin`, `proyectos`.`estado`, `usuario`.`nombre`
+FROM `proyectos`
+JOIN `usuario` ON `usuario`.`id_usuario` = `proyectos`.`id_usuario`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `proyectos`.`nombre`, `proyectos`.`descripcion`, `proyectos`.`fecha_incio`, `proyectos`.`fecha_fin`, `proyectos`.`estado`, `usuario`.`nombre`
+FROM `proyectos`
+JOIN `usuario` ON `usuario`.`id_usuario` = `proyectos`.`id_usuario`', [], false)
+ 5 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ProyectosModel.php(42): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\ProyectoController.php(22): App\Models\ProyectosModel->mostrar()
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ProyectoController->mostrar()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProyectoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-26 23:16:23 --> ErrorException: Undefined property: App\Controllers\ProyectoController::$moodelo
+[Method: POST, Route: api/proyectos]
+in APPPATH\Controllers\ProyectoController.php on line 41.
+ 1 APPPATH\Controllers\ProyectoController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\ProyectoController::$moodelo', 'C:\\xampp\\htdocs\\fs2026\\CrudApi\\app\\Controllers\\ProyectoController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\ProyectoController->crear()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProyectoController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

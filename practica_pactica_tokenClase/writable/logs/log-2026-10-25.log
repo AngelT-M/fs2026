@@ -1,0 +1,287 @@
+CRITICAL - 2026-10-25 17:00:29 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: /]
+in APPPATH\Controllers\BaseController.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\practica_pactica_tokenClase\\app\\Controllers\\BaseController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BaseController')
+ 3 APPPATH\Controllers\Home.php(5): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BaseController')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once('C:\\xampp\\htdocs\\fs2026\\practica_pactica_tokenClase\\app\\Controllers\\Home.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\practica_pactica_tokenClase\\app\\Controllers\\Home.php')
+ 6 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 7 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 8 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\Home')
+ 9 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+10 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('/')
+11 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+12 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-25 17:41:59 --> Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'ana\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'ana\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'ana\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('ana', 'Ana2026*')
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 17:41:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('ana', 'Ana2026*')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 17:41:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'ana\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'ana\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('ana', 'Ana2026*')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 17:41:59 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'ana\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'ana\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'ana\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('ana', 'Ana2026*')
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 17:42:52 --> ParseError: syntax error, unexpected token ":"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Models\TokenAccesoModel.php on line 36.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\practica_pactica_tokenClase\\app\\Models\\TokenAccesoModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TokenAccesoModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TokenAccesoModel')
+ 4 SYSTEMPATH\Config\Factories.php(306): class_exists('App\\Models\\TokenAccesoModel')
+ 5 SYSTEMPATH\Config\Factories.php(223): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\TokenAccesoModel')
+ 6 SYSTEMPATH\Config\Factories.php(163): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\TokenAccesoModel', [...])
+ 7 SYSTEMPATH\Common.php(850): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Models\UsuarioModel.php(48): model('App\\Models\\TokenAccesoModel')
+ 9 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('ana', 'Ana2026*')
+10 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+11 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+12 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 17:43:12 --> ParseError: syntax error, unexpected identifier "gmdate", expecting ")"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Models\TokenAccesoModel.php on line 49.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\practica_pactica_tokenClase\\app\\Models\\TokenAccesoModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TokenAccesoModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TokenAccesoModel')
+ 4 SYSTEMPATH\Config\Factories.php(306): class_exists('App\\Models\\TokenAccesoModel')
+ 5 SYSTEMPATH\Config\Factories.php(223): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\TokenAccesoModel')
+ 6 SYSTEMPATH\Config\Factories.php(163): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\TokenAccesoModel', [...])
+ 7 SYSTEMPATH\Common.php(850): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Models\UsuarioModel.php(48): model('App\\Models\\TokenAccesoModel')
+ 9 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('ana', 'Ana2026*')
+10 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+11 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+12 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 17:44:36 --> ParseError: syntax error, unexpected identifier "gmdate", expecting ")"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Models\TokenAccesoModel.php on line 49.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\practica_pactica_tokenClase\\app\\Models\\TokenAccesoModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TokenAccesoModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TokenAccesoModel')
+ 4 SYSTEMPATH\Config\Factories.php(306): class_exists('App\\Models\\TokenAccesoModel')
+ 5 SYSTEMPATH\Config\Factories.php(223): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\TokenAccesoModel')
+ 6 SYSTEMPATH\Config\Factories.php(163): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\TokenAccesoModel', [...])
+ 7 SYSTEMPATH\Common.php(850): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Models\UsuarioModel.php(48): model('App\\Models\\TokenAccesoModel')
+ 9 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('ana', 'Ana2026*')
+10 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+11 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+12 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 17:44:59 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\Database\BaseBuilder.php on line 429.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(429): trim(2)
+ 2 SYSTEMPATH\Model.php(757): CodeIgniter\Database\BaseBuilder->select([...])
+ 3 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Models\UsuarioModel.php(48): App\Models\TokenAccesoModel->crearToken(2)
+ 5 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('ana', 'Ana2026*')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 17:46:23 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\Database\BaseBuilder.php on line 429.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(429): trim(2)
+ 2 SYSTEMPATH\Model.php(757): CodeIgniter\Database\BaseBuilder->select([...])
+ 3 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Models\UsuarioModel.php(48): App\Models\TokenAccesoModel->crearToken(2)
+ 5 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('ana', 'Ana2026*')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 17:49:13 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\Database\BaseBuilder.php on line 429.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(429): trim(2)
+ 2 SYSTEMPATH\Model.php(757): CodeIgniter\Database\BaseBuilder->select([...])
+ 3 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Models\UsuarioModel.php(48): App\Models\TokenAccesoModel->crearToken(2)
+ 5 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('ana', 'Ana2026*')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 17:50:07 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\Database\BaseBuilder.php on line 429.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(429): trim(2)
+ 2 SYSTEMPATH\Model.php(757): CodeIgniter\Database\BaseBuilder->select([...])
+ 3 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Models\UsuarioModel.php(48): App\Models\TokenAccesoModel->crearToken(2)
+ 5 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('ana', 'Ana2026*')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 17:54:01 --> TypeError: trim(): Argument #1 ($string) must be of type string, int given
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\Database\BaseBuilder.php on line 429.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(429): trim(2)
+ 2 SYSTEMPATH\Model.php(757): CodeIgniter\Database\BaseBuilder->select([...])
+ 3 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->__call('select', [...])
+ 4 APPPATH\Models\UsuarioModel.php(48): App\Models\TokenAccesoModel->crearToken(2)
+ 5 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('ana', 'Ana2026*')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 19:33:23 --> CodeIgniter\HTTP\Exceptions\HTTPException: 4001 is not a valid HTTP return status code
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 82.
+ 1 SYSTEMPATH\HTTP\ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(4001)
+ 2 APPPATH\Controllers\BaseController.php(30): CodeIgniter\HTTP\Response->setStatusCode(4001)
+ 3 APPPATH\Controllers\AuthoController.php(34): App\Controllers\BaseController->resError('Creedencial incorrecta o usuario inactivo', 4001)
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-25 19:34:10 --> CodeIgniter\HTTP\Exceptions\HTTPException: 4001 is not a valid HTTP return status code
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 82.
+ 1 SYSTEMPATH\HTTP\ResponseTrait.php(82): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(4001)
+ 2 APPPATH\Controllers\BaseController.php(30): CodeIgniter\HTTP\Response->setStatusCode(4001)
+ 3 APPPATH\Controllers\AuthoController.php(34): App\Controllers\BaseController->resError('Creedencial incorrecta o usuario inactivo', 4001)
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

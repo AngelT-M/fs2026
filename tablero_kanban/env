@@ -21,6 +21,7 @@
 #--------------------------------------------------------------------
 
 # app.baseURL = ''
+KANBAN_API_URL = 'http://localhost/fs2026/kanba_bd/api'
 # If you have trouble with `.`, you could also use `_`.
 # app_baseURL = ''
 # app.forceGlobalSecureRequests = false

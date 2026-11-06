@@ -52,7 +52,7 @@ class Cors extends BaseConfig
          * E.g.:
          *   - ['https://\w+\.example\.com']
          */
-        'allowedOriginsPatterns' => ['*'],
+        'allowedOriginsPatterns' => ['https?://(localhost|127\.0\.0\.1)(:\d+)?'],
 
         /**
          * Weather to send the `Access-Control-Allow-Credentials` header.

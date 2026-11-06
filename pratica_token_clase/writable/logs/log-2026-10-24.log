@@ -19,3 +19,1084 @@ in APPPATH\Config\Routes.php on line 8.
  2 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
  3 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
  4 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:29:27 --> ParseError: syntax error, unexpected integer "500", expecting ")"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\AuthoController.php on line 53.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\pratica_token_clase\\app\\Controllers\\AuthoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AuthoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AuthoController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\AuthoController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('api/autenticacion/login')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:31:46 --> ParseError: syntax error, unexpected integer "500", expecting ")"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\AuthoController.php on line 53.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\pratica_token_clase\\app\\Controllers\\AuthoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AuthoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AuthoController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\AuthoController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('api/autenticacion/login')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:33:12 --> ParseError: syntax error, unexpected integer "500", expecting ")"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\AuthoController.php on line 53.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\pratica_token_clase\\app\\Controllers\\AuthoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AuthoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AuthoController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\AuthoController')
+ 5 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('api/autenticacion/login')
+ 7 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:33:41 --> Error: Undefined constant "App\Controllers\tue"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\BaseController.php on line 42.
+ 1 APPPATH\Controllers\AuthoController.php(14): App\Controllers\BaseController->cuerpoJson()
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:34:08 --> Error: Undefined constant "App\Controllers\contrasena"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\AuthoController.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:34:40 --> ParseError: syntax error, unexpected token "=>", expecting "]"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Models\UsuarioModel.php on line 41.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\pratica_token_clase\\app\\Models\\UsuarioModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuarioModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuarioModel')
+ 4 SYSTEMPATH\Config\Factories.php(306): class_exists('App\\Models\\UsuarioModel')
+ 5 SYSTEMPATH\Config\Factories.php(223): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\UsuarioModel')
+ 6 SYSTEMPATH\Config\Factories.php(163): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\UsuarioModel', [...])
+ 7 SYSTEMPATH\Common.php(850): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\AuthoController.php(27): model('App\\Models\\UsuarioModel')
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:35:52 --> ParseError: syntax error, unexpected token "}"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Models\UsuarioModel.php on line 50.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\pratica_token_clase\\app\\Models\\UsuarioModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuarioModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuarioModel')
+ 4 SYSTEMPATH\Config\Factories.php(306): class_exists('App\\Models\\UsuarioModel')
+ 5 SYSTEMPATH\Config\Factories.php(223): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\UsuarioModel')
+ 6 SYSTEMPATH\Config\Factories.php(163): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\UsuarioModel', [...])
+ 7 SYSTEMPATH\Common.php(850): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\AuthoController.php(27): model('App\\Models\\UsuarioModel')
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:36:41 --> ParseError: syntax error, unexpected token ";", expecting "]"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Models\UsuarioModel.php on line 53.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\pratica_token_clase\\app\\Models\\UsuarioModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuarioModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuarioModel')
+ 4 SYSTEMPATH\Config\Factories.php(306): class_exists('App\\Models\\UsuarioModel')
+ 5 SYSTEMPATH\Config\Factories.php(223): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\UsuarioModel')
+ 6 SYSTEMPATH\Config\Factories.php(163): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\UsuarioModel', [...])
+ 7 SYSTEMPATH\Common.php(850): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\AuthoController.php(27): model('App\\Models\\UsuarioModel')
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-24 20:37:00 --> Table 'gestion_proyectos.usuarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuarios`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuarios`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuarios`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuarios`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:37:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestion_proyectos.usuarios' doesn't exist
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuarios`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:37:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestion_proyectos.usuarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuarios`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuarios`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuarios`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:37:00 --> [Caused by] mysqli_sql_exception: Table 'gestion_proyectos.usuarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuarios`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuarios`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuarios`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuarios`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-24 20:40:27 --> Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:40:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:40:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:40:27 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-24 20:44:03 --> Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:44:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:44:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:44:03 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-24 20:45:10 --> Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:45:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:45:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:45:11 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario.id_rol rol.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = \'admin\'
+AND `usuario`.`estado` = \'ACTIVO\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT `usuario`.`id_usuario`, `usuario`.`usuario`, `usuario`.`contrasena`, `usuario`.`id_rol rol`.`nombre` AS `rol_nombre`
+FROM `usuario`
+JOIN `rol` ON `rol`.`id_rol` = `usuario`.`id_rol`
+WHERE `usuario`.`usuario` = :usuario.usuario:
+AND `usuario`.`estado` = :usuario.estado:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\UsuarioModel.php(28): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:45:24 --> ParseError: syntax error, unexpected token "=", expecting "]"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Models\TokenAccesoModel.php on line 29.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\pratica_token_clase\\app\\Models\\TokenAccesoModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TokenAccesoModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TokenAccesoModel')
+ 4 SYSTEMPATH\Config\Factories.php(306): class_exists('App\\Models\\TokenAccesoModel')
+ 5 SYSTEMPATH\Config\Factories.php(223): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\TokenAccesoModel')
+ 6 SYSTEMPATH\Config\Factories.php(163): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\TokenAccesoModel', [...])
+ 7 SYSTEMPATH\Common.php(850): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Models\UsuarioModel.php(47): model('App\\Models\\TokenAccesoModel')
+ 9 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+10 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+11 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+12 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:45:37 --> ErrorException: Undefined array key "contrsena"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Models\UsuarioModel.php on line 37.
+ 1 APPPATH\Models\UsuarioModel.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contrsena"', 'C:\\xampp\\htdocs\\fs2026\\pratica_token_clase\\app\\Models\\UsuarioModel.php', 37)
+ 2 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:46:42 --> ParseError: syntax error, unexpected token "=", expecting "]"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Models\TokenAccesoModel.php on line 29.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\pratica_token_clase\\app\\Models\\TokenAccesoModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TokenAccesoModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TokenAccesoModel')
+ 4 SYSTEMPATH\Config\Factories.php(306): class_exists('App\\Models\\TokenAccesoModel')
+ 5 SYSTEMPATH\Config\Factories.php(223): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\TokenAccesoModel')
+ 6 SYSTEMPATH\Config\Factories.php(163): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\TokenAccesoModel', [...])
+ 7 SYSTEMPATH\Common.php(850): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Models\UsuarioModel.php(47): model('App\\Models\\TokenAccesoModel')
+ 9 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+10 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+11 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+12 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:47:05 --> ParseError: syntax error, unexpected identifier "gmdate", expecting ")"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Models\TokenAccesoModel.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\pratica_token_clase\\app\\Models\\TokenAccesoModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TokenAccesoModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TokenAccesoModel')
+ 4 SYSTEMPATH\Config\Factories.php(306): class_exists('App\\Models\\TokenAccesoModel')
+ 5 SYSTEMPATH\Config\Factories.php(223): CodeIgniter\Config\Factories::locateClass([...], 'App\\Models\\TokenAccesoModel')
+ 6 SYSTEMPATH\Config\Factories.php(163): CodeIgniter\Config\Factories::getDefinedInstance([...], 'App\\Models\\TokenAccesoModel', [...])
+ 7 SYSTEMPATH\Common.php(850): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Models\UsuarioModel.php(47): model('App\\Models\\TokenAccesoModel')
+ 9 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+10 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+11 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+12 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-24 20:48:56 --> Table 'gestion_proyectos.tokenaccesos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'6830517950e9acb9492d8f185fe357ec70f4a51f555c0fda5105e7bdbc1d26ff\', \'2026-10-24 20:48:56\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'6830517950e9acb9492d8f185fe357ec70f4a51f555c0fda5105e7bdbc1d26ff\', \'2026-10-24 20:48:56\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'6830517950e9acb9492d8f185fe357ec70f4a51f555c0fda5105e7bdbc1d26ff\', \'2026-10-24 20:48:56\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (:id_usuario:, :token:, :fecha_creacion:, :activo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Models\UsuarioModel.php(47): App\Models\TokenAccesoModel->crearToken(1)
+10 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+11 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+12 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+13 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:48:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestion_proyectos.tokenaccesos' doesn't exist
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (:id_usuario:, :token:, :fecha_creacion:, :activo:)', [...], false)
+ 2 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Models\UsuarioModel.php(47): App\Models\TokenAccesoModel->crearToken(1)
+ 7 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:48:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestion_proyectos.tokenaccesos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'6830517950e9acb9492d8f185fe357ec70f4a51f555c0fda5105e7bdbc1d26ff\', \'2026-10-24 20:48:56\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'6830517950e9acb9492d8f185fe357ec70f4a51f555c0fda5105e7bdbc1d26ff\', \'2026-10-24 20:48:56\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (:id_usuario:, :token:, :fecha_creacion:, :activo:)', [...], false)
+ 4 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Models\UsuarioModel.php(47): App\Models\TokenAccesoModel->crearToken(1)
+ 9 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+10 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+11 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+12 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:48:56 --> [Caused by] mysqli_sql_exception: Table 'gestion_proyectos.tokenaccesos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'6830517950e9acb9492d8f185fe357ec70f4a51f555c0fda5105e7bdbc1d26ff\', \'2026-10-24 20:48:56\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'6830517950e9acb9492d8f185fe357ec70f4a51f555c0fda5105e7bdbc1d26ff\', \'2026-10-24 20:48:56\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'6830517950e9acb9492d8f185fe357ec70f4a51f555c0fda5105e7bdbc1d26ff\', \'2026-10-24 20:48:56\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (:id_usuario:, :token:, :fecha_creacion:, :activo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Models\UsuarioModel.php(47): App\Models\TokenAccesoModel->crearToken(1)
+10 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+11 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+12 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+13 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-24 20:52:27 --> Table 'gestion_proyectos.tokenaccesos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'a8010eb572c2d0e8f06b66ee3adfe750bf765359e5d44e1ee14e517f945f5e62\', \'2026-10-24 20:52:27\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'a8010eb572c2d0e8f06b66ee3adfe750bf765359e5d44e1ee14e517f945f5e62\', \'2026-10-24 20:52:27\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'a8010eb572c2d0e8f06b66ee3adfe750bf765359e5d44e1ee14e517f945f5e62\', \'2026-10-24 20:52:27\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (:id_usuario:, :token:, :fecha_creacion:, :activo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Models\UsuarioModel.php(47): App\Models\TokenAccesoModel->crearToken(1)
+10 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+11 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+12 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+13 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:52:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestion_proyectos.tokenaccesos' doesn't exist
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (:id_usuario:, :token:, :fecha_creacion:, :activo:)', [...], false)
+ 2 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Models\UsuarioModel.php(47): App\Models\TokenAccesoModel->crearToken(1)
+ 7 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:52:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestion_proyectos.tokenaccesos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'a8010eb572c2d0e8f06b66ee3adfe750bf765359e5d44e1ee14e517f945f5e62\', \'2026-10-24 20:52:27\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'a8010eb572c2d0e8f06b66ee3adfe750bf765359e5d44e1ee14e517f945f5e62\', \'2026-10-24 20:52:27\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (:id_usuario:, :token:, :fecha_creacion:, :activo:)', [...], false)
+ 4 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Models\UsuarioModel.php(47): App\Models\TokenAccesoModel->crearToken(1)
+ 9 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+10 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+11 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+12 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:52:27 --> [Caused by] mysqli_sql_exception: Table 'gestion_proyectos.tokenaccesos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'a8010eb572c2d0e8f06b66ee3adfe750bf765359e5d44e1ee14e517f945f5e62\', \'2026-10-24 20:52:27\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'a8010eb572c2d0e8f06b66ee3adfe750bf765359e5d44e1ee14e517f945f5e62\', \'2026-10-24 20:52:27\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'a8010eb572c2d0e8f06b66ee3adfe750bf765359e5d44e1ee14e517f945f5e62\', \'2026-10-24 20:52:27\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (:id_usuario:, :token:, :fecha_creacion:, :activo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Models\UsuarioModel.php(47): App\Models\TokenAccesoModel->crearToken(1)
+10 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+11 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+12 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+13 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-24 20:54:25 --> Table 'gestion_proyectos.tokenaccesos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'782d3bbbc4a40bc6030cf56d2d31ed97073fa4ffc878657f01f3ab646a9fac84\', \'2026-10-24 20:54:25\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'782d3bbbc4a40bc6030cf56d2d31ed97073fa4ffc878657f01f3ab646a9fac84\', \'2026-10-24 20:54:25\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'782d3bbbc4a40bc6030cf56d2d31ed97073fa4ffc878657f01f3ab646a9fac84\', \'2026-10-24 20:54:25\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (:id_usuario:, :token:, :fecha_creacion:, :activo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Models\UsuarioModel.php(47): App\Models\TokenAccesoModel->crearToken(1)
+10 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+11 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+12 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+13 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:54:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestion_proyectos.tokenaccesos' doesn't exist
+[Method: POST, Route: api/autenticacion/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 860.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (:id_usuario:, :token:, :fecha_creacion:, :activo:)', [...], false)
+ 2 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Models\UsuarioModel.php(47): App\Models\TokenAccesoModel->crearToken(1)
+ 7 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:54:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'gestion_proyectos.tokenaccesos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 304.
+ 1 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'782d3bbbc4a40bc6030cf56d2d31ed97073fa4ffc878657f01f3ab646a9fac84\', \'2026-10-24 20:54:25\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'782d3bbbc4a40bc6030cf56d2d31ed97073fa4ffc878657f01f3ab646a9fac84\', \'2026-10-24 20:54:25\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (:id_usuario:, :token:, :fecha_creacion:, :activo:)', [...], false)
+ 4 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Models\UsuarioModel.php(47): App\Models\TokenAccesoModel->crearToken(1)
+ 9 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+10 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+11 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+12 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:54:25 --> [Caused by] mysqli_sql_exception: Table 'gestion_proyectos.tokenaccesos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 294.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(294): mysqli->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'782d3bbbc4a40bc6030cf56d2d31ed97073fa4ffc878657f01f3ab646a9fac84\', \'2026-10-24 20:54:25\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(905): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'782d3bbbc4a40bc6030cf56d2d31ed97073fa4ffc878657f01f3ab646a9fac84\', \'2026-10-24 20:54:25\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(822): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (1, \'782d3bbbc4a40bc6030cf56d2d31ed97073fa4ffc878657f01f3ab646a9fac84\', \'2026-10-24 20:54:25\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tokenaccesos` (`id_usuario`, `token`, `fecha_creacion`, `activo`) VALUES (:id_usuario:, :token:, :fecha_creacion:, :activo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(358): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(671): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\TokenAccesoModel.php(24): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Models\UsuarioModel.php(47): App\Models\TokenAccesoModel->crearToken(1)
+10 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+11 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+12 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+13 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:57:56 --> ErrorException: Undefined variable $token
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Models\UsuarioModel.php on line 53.
+ 1 APPPATH\Models\UsuarioModel.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $token', 'C:\\xampp\\htdocs\\fs2026\\pratica_token_clase\\app\\Models\\UsuarioModel.php', 53)
+ 2 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:58:39 --> ErrorException: Undefined variable $toke
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Models\UsuarioModel.php on line 48.
+ 1 APPPATH\Models\UsuarioModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $toke', 'C:\\xampp\\htdocs\\fs2026\\pratica_token_clase\\app\\Models\\UsuarioModel.php', 48)
+ 2 APPPATH\Controllers\AuthoController.php(27): App\Models\UsuarioModel->verificarLoginApi('admin', 'password')
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:58:56 --> Error: Call to undefined method App\Controllers\AuthoController::respuestaExitosa()
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\AuthoController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 20:59:29 --> Error: Undefined constant "App\Controllers\datos"
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\BaseController.php on line 17.
+ 1 APPPATH\Controllers\AuthoController.php(39): App\Controllers\BaseController->respuestasExitosa([...])
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:00:08 --> TypeError: App\Controllers\BaseController::respuestasExitosa(): Return value must be of type App\Controllers\response, CodeIgniter\HTTP\Response returned
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\BaseController.php on line 21.
+ 1 APPPATH\Controllers\AuthoController.php(39): App\Controllers\BaseController->respuestasExitosa([...])
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:01:25 --> Error: Call to undefined method App\Controllers\AuthoController::respuestaError()
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\AuthoController.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:01:55 --> TypeError: App\Controllers\BaseController::repuestaError(): Return value must be of type App\Controllers\RespondeseInter, CodeIgniter\HTTP\Response returned
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\BaseController.php on line 30.
+ 1 APPPATH\Controllers\AuthoController.php(36): App\Controllers\BaseController->repuestaError('Credenciales incorrectas 0 usuario incatiovo', 401)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:03:24 --> TypeError: App\Controllers\BaseController::repuestaError(): Return value must be of type App\Controllers\RespondeseInter, CodeIgniter\HTTP\Response returned
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\BaseController.php on line 30.
+ 1 APPPATH\Controllers\AuthoController.php(36): App\Controllers\BaseController->repuestaError('Credenciales incorrectas 0 usuario incatiovo', 401)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:05:41 --> TypeError: App\Controllers\BaseController::repuestaError(): Return value must be of type App\Controllers\RespondeseInter, CodeIgniter\HTTP\Response returned
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\BaseController.php on line 30.
+ 1 APPPATH\Controllers\AuthoController.php(36): App\Controllers\BaseController->repuestaError('Credenciales incorrectas 0 usuario incatiovo', 401)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:07:08 --> TypeError: App\Controllers\BaseController::repuestaError(): Return value must be of type App\Controllers\RespondeseInter, CodeIgniter\HTTP\Response returned
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\BaseController.php on line 30.
+ 1 APPPATH\Controllers\AuthoController.php(36): App\Controllers\BaseController->repuestaError('Credenciales incorrectas 0 usuario incatiovo', 401)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:07:10 --> TypeError: App\Controllers\BaseController::repuestaError(): Return value must be of type App\Controllers\RespondeseInter, CodeIgniter\HTTP\Response returned
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\BaseController.php on line 30.
+ 1 APPPATH\Controllers\AuthoController.php(36): App\Controllers\BaseController->repuestaError('Credenciales incorrectas 0 usuario incatiovo', 401)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:08:30 --> TypeError: App\Controllers\BaseController::repuestaError(): Return value must be of type App\Controllers\RespondeseInter, CodeIgniter\HTTP\Response returned
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\BaseController.php on line 30.
+ 1 APPPATH\Controllers\AuthoController.php(36): App\Controllers\BaseController->repuestaError('Credenciales incorrectas 0 usuario incatiovo', 401)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:09:30 --> TypeError: App\Controllers\BaseController::repuestaError(): Return value must be of type App\Controllers\RespondeseInter, CodeIgniter\HTTP\Response returned
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\BaseController.php on line 30.
+ 1 APPPATH\Controllers\AuthoController.php(36): App\Controllers\BaseController->repuestaError('Credenciales incorrectas 0 usuario incatiovo', 401)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:11:46 --> TypeError: App\Controllers\BaseController::repuestaError(): Return value must be of type App\Controllers\RespondeseInter, CodeIgniter\HTTP\Response returned
+[Method: POST, Route: api/autenticacion/login]
+in APPPATH\Controllers\BaseController.php on line 30.
+ 1 APPPATH\Controllers\AuthoController.php(36): App\Controllers\BaseController->repuestaError('Credenciales incorrectas 0 usuario incatiovo', 401)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthoController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthoController))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:40:43 --> ParseError: syntax error, unexpected token "}"
+[Method: POST, Route: api/autenticacion/logout]
+in APPPATH\Config\Routes.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:40:51 --> ParseError: syntax error, unexpected token "}"
+[Method: POST, Route: api/autenticacion/logout]
+in APPPATH\Config\Routes.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(841): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:40:59 --> Error: Class "Config\AuthFilter" not found
+[Method: POST, Route: api/autenticacion/logout]
+in SYSTEMPATH\Filters\Filters.php on line 299.
+ 1 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('Config\\AuthFilter')
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/autenticacion/logout', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:41:33 --> Error: Class "Config\AuthFilter" not found
+[Method: POST, Route: api/autenticacion/logout]
+in SYSTEMPATH\Filters\Filters.php on line 299.
+ 1 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('Config\\AuthFilter')
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/autenticacion/logout', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:42:53 --> Error: Class "Config\AuthFilter" not found
+[Method: POST, Route: api/autenticacion/logout]
+in SYSTEMPATH\Filters\Filters.php on line 299.
+ 1 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('Config\\AuthFilter')
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/autenticacion/logout', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:49:40 --> ParseError: syntax error, unexpected token "private", expecting ";" or "{"
+[Method: POST, Route: api/autenticacion/logout]
+in APPPATH\Filters\AuthFilter.php on line 34.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2026\\pratica_token_clase\\app\\Filters\\AuthFilter.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 3 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 6 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/autenticacion/logout', 'before')
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-10-24 21:50:37 --> ErrorException: Non-abstract method App\Filters\AuthFilter::afeter() must contain body
+[Method: POST, Route: api/autenticacion/logout]
+in APPPATH\Filters\AuthFilter.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-24 21:50:58 --> ErrorException: Declaration of App\Filters\AuthFilter::before(CodeIgniter\HTTP\ResponseInterface $request, $arguments = null) must be compatible with CodeIgniter\Filters\FilterInterface::before(CodeIgniter\HTTP\RequestInterface $request, $arguments = null)
+[Method: POST, Route: api/autenticacion/logout]
+in APPPATH\Filters\AuthFilter.php on line 15.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-24 21:52:11 --> ErrorException: Class App\Filters\AuthFilter contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (CodeIgniter\Filters\FilterInterface::after)
+[Method: POST, Route: api/autenticacion/logout]
+in APPPATH\Filters\AuthFilter.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

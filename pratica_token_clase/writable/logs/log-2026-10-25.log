@@ -1,0 +1,8 @@
+CRITICAL - 2026-10-25 14:27:48 --> ErrorException: Class App\Filters\AuthFilter contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (CodeIgniter\Filters\FilterInterface::after)
+[Method: POST, Route: api/autenticacion/logout]
+in APPPATH\Filters\AuthFilter.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-10-25 14:30:51 --> ErrorException: Class App\Filters\AuthFilter contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (CodeIgniter\Filters\FilterInterface::after)
+[Method: POST, Route: api/autenticacion/logout]
+in APPPATH\Filters\AuthFilter.php on line 13.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

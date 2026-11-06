@@ -6,6 +6,10 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('welcome_message');
+        $apiBaseUrl = getenv('KANBAN_API_URL') ?: 'http://localhost/fs2026/kanba_bd/api';
+
+        return view('kanban_spa', [
+            'apiBaseUrl' => rtrim($apiBaseUrl, '/'),
+        ]);
     }
 }
