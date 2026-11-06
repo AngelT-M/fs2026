@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\xampp\htdocs\fs2026\entidad_educativa_api\phpunit.dist.xml" tests="25" assertions="164" errors="0" failures="0" skipped="0" time="4.124036">
+    <testsuite name="App" tests="25" assertions="164" errors="0" failures="0" skipped="0" time="4.124036">
+      <testsuite name="ExampleDatabaseTest" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\database\ExampleDatabaseTest.php" tests="2" assertions="3" errors="0" failures="0" skipped="0" time="0.039332">
+        <testcase name="testModelFindAll" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\database\ExampleDatabaseTest.php" line="17" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" assertions="1" time="0.032369"/>
+        <testcase name="testSoftDeleteLeavesRow" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\database\ExampleDatabaseTest.php" line="28" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" assertions="2" time="0.006963"/>
+      </testsuite>
+      <testsuite name="ApiWriteOperationsTest" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" tests="20" assertions="158" errors="0" failures="0" skipped="0" time="4.082398">
+        <testcase name="testProfileCreationCreatesAccountAndHashesPassword" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="39" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="12" time="0.277554"/>
+        <testcase name="testUserCreationHashesPasswordAndOmitsItFromResponse" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="74" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="6" time="0.265730"/>
+        <testcase name="testTeacherAndStaffProfilesCreateTheirAccounts" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="92" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="9" time="0.258912"/>
+        <testcase name="testUserPutAndDeleteDeactivateTokens" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="127" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="10" time="0.258326"/>
+        <testcase name="testProfilePutAndDeleteDeactivateItsAccount" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="153" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="9" time="0.175259"/>
+        <testcase name="testStudentsCannotReadTeacherOrStaffProfiles" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="171" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="8" time="0.179573"/>
+        <testcase name="testStudentListOnlyReturnsItsOwnProfile" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="181" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="7" time="0.215135"/>
+        <testcase name="testAcademicWritesOpenRoomAndCreateAssignments" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="210" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="8" time="0.178194"/>
+        <testcase name="testActivityAndGradeWrites" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="243" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="8" time="0.178624"/>
+        <testcase name="testAttendanceWriteRetainsClassroomAssignment" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="276" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="7" time="0.175508"/>
+        <testcase name="testAttendanceReadsReturnClassListAndStudentHistory" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="296" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="9" time="0.177719"/>
+        <testcase name="testExamSubmissionAndAuthorization" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="318" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="7" time="0.175645"/>
+        <testcase name="testExamSubmissionRequiresValidFileUrl" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="337" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="5" time="0.175753"/>
+        <testcase name="testPartialPaymentAndCalendarEventWrites" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="349" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="9" time="0.175538"/>
+        <testcase name="testPaymentReceiptAndBulkChargeGeneration" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="378" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="10" time="0.179705"/>
+        <testcase name="testPasswordChangeAndDashboardSummary" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="417" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="10" time="0.296756"/>
+        <testcase name="testCoursesCanBeCreatedAndUpdatedByAdmin" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="440" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="6" time="0.174893"/>
+        <testcase name="testInvalidWriteIsRejectedWithoutDatabaseChanges" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="457" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="6" time="0.173100"/>
+        <testcase name="testLoginCreatesTokenForValidCredentials" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="471" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="7" time="0.215355"/>
+        <testcase name="testLogoutRevokesThePresentedToken" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\feature\ApiWriteOperationsTest.php" line="492" class="ApiWriteOperationsTest" classname="ApiWriteOperationsTest" assertions="5" time="0.175116"/>
+      </testsuite>
+      <testsuite name="ExampleSessionTest" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\session\ExampleSessionTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.000735">
+        <testcase name="testSessionSimple" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\session\ExampleSessionTest.php" line="10" class="ExampleSessionTest" classname="ExampleSessionTest" assertions="1" time="0.000735"/>
+      </testsuite>
+      <testsuite name="HealthTest" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\unit\HealthTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.001571">
+        <testcase name="testIsDefinedAppPath" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\unit\HealthTest.php" line="12" class="HealthTest" classname="HealthTest" assertions="1" time="0.000809"/>
+        <testcase name="testBaseUrlHasBeenSet" file="C:\xampp\htdocs\fs2026\entidad_educativa_api\tests\unit\HealthTest.php" line="17" class="HealthTest" classname="HealthTest" assertions="1" time="0.000762"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

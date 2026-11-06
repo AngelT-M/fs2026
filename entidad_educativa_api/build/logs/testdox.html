@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Test Documentation</title>
+        <style>
+            body {
+                text-rendering: optimizeLegibility;
+                font-family: Source SansSerif Pro, Arial, sans-serif;
+                font-variant-ligatures: common-ligatures;
+                font-kerning: normal;
+                margin-left: 2rem;
+                background-color: #fff;
+                color: #000;
+            }
+
+            body > ul > li {
+                font-size: larger;
+            }
+
+            h2 {
+                font-size: larger;
+                text-decoration-line: underline;
+                text-decoration-thickness: 2px;
+                margin: 0;
+                padding: 0.5rem 0;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0 0 2rem;
+                padding: 0 0 0 1rem;
+                text-indent: -1rem;
+            }
+
+            .success:before {
+                color: #4e9a06;
+                content: '✓';
+                padding-right: 0.5rem;
+            }
+
+            .defect {
+                color: #a40000;
+            }
+
+            .defect:before {
+                color: #a40000;
+                content: '✗';
+                padding-right: 0.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Api Write Operations</h2>
+        <ul>
+            <li class="success">Profile creation creates account and hashes password</li>
+            <li class="success">User creation hashes password and omits it from response</li>
+            <li class="success">Teacher and staff profiles create their accounts</li>
+            <li class="success">User put and delete deactivate tokens</li>
+            <li class="success">Profile put and delete deactivate its account</li>
+            <li class="success">Students cannot read teacher or staff profiles</li>
+            <li class="success">Student list only returns its own profile</li>
+            <li class="success">Academic writes open room and create assignments</li>
+            <li class="success">Activity and grade writes</li>
+            <li class="success">Attendance write retains classroom assignment</li>
+            <li class="success">Attendance reads return class list and student history</li>
+            <li class="success">Exam submission and authorization</li>
+            <li class="success">Exam submission requires valid file url</li>
+            <li class="success">Partial payment and calendar event writes</li>
+            <li class="success">Payment receipt and bulk charge generation</li>
+            <li class="success">Password change and dashboard summary</li>
+            <li class="success">Courses can be created and updated by admin</li>
+            <li class="success">Invalid write is rejected without database changes</li>
+            <li class="success">Login creates token for valid credentials</li>
+            <li class="success">Logout revokes the presented token</li>
+        </ul>
+        <h2>Example Database</h2>
+        <ul>
+            <li class="success">Model find all</li>
+            <li class="success">Soft delete leaves row</li>
+        </ul>
+        <h2>Example Session</h2>
+        <ul>
+            <li class="success">Session simple</li>
+        </ul>
+        <h2>Health</h2>
+        <ul>
+            <li class="success">Is defined app path</li>
+            <li class="success">Base url has been set</li>
+        </ul>
+    </body>
+</html>

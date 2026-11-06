@@ -1,0 +1,33 @@
+Api Write Operations
+ [x] Profile creation creates account and hashes password
+ [x] User creation hashes password and omits it from response
+ [x] Teacher and staff profiles create their accounts
+ [x] User put and delete deactivate tokens
+ [x] Profile put and delete deactivate its account
+ [x] Students cannot read teacher or staff profiles
+ [x] Student list only returns its own profile
+ [x] Academic writes open room and create assignments
+ [x] Activity and grade writes
+ [x] Attendance write retains classroom assignment
+ [x] Attendance reads return class list and student history
+ [x] Exam submission and authorization
+ [x] Exam submission requires valid file url
+ [x] Partial payment and calendar event writes
+ [x] Payment receipt and bulk charge generation
+ [x] Password change and dashboard summary
+ [x] Courses can be created and updated by admin
+ [x] Invalid write is rejected without database changes
+ [x] Login creates token for valid credentials
+ [x] Logout revokes the presented token
+
+Example Database
+ [x] Model find all
+ [x] Soft delete leaves row
+
+Example Session
+ [x] Session simple
+
+Health
+ [x] Is defined app path
+ [x] Base url has been set
+

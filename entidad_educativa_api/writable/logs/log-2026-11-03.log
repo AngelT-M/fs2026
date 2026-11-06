@@ -1,0 +1,9 @@
+CRITICAL - 2026-11-03 15:57:45 --> TypeError: CodeIgniter\Router\RouteCollection::group(): Argument #1 ($name) must be of type string, array given, called in C:\xampp\htdocs\fs2026\entidad_educativa_api\app\Config\Routes.php on line 10
+[Method: CLI, Route: make:model/TokenAccesoModel]
+in SYSTEMPATH\Router\RouteCollection.php on line 664.
+ 1 APPPATH\Config\Routes.php(10): CodeIgniter\Router\RouteCollection->group([...], Object(Closure))
+ 2 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xampp\\htdocs\\fs2026\\entidad_educativa_api\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CLI\Console.php(39): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+ 5 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 6 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
