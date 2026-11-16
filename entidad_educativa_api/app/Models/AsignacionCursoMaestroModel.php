@@ -74,4 +74,33 @@ class AsignacionCursoMaestroModel extends Model
         $id = $this->guardarApi($datos);
         return $id === false ? false : $this->find($id);
     }
+
+    public function listarAsignacionesParaUsuario(array $usuario): array
+    {
+        $builder = $this->db->table('asignacion_curso_maestro acm')
+            ->select('acm.asignacion_curso_maestro_id, acm.maestro_id, m.nombre AS maestro_nombre, m.apellido AS maestro_apellido, m.carne_maestro, acm.curso_id, c.nom_curso, acm.grado_seccion_id, g.nom_grado, s.nom_seccion, gs.ciclo')
+            ->join('maestros m', 'm.maestro_id = acm.maestro_id')
+            ->join('cursos c', 'c.curso_id = acm.curso_id')
+            ->join('grados_secciones gs', 'gs.grado_seccion_id = acm.grado_seccion_id')
+            ->join('grados g', 'g.grado_id = gs.grado_id')
+            ->join('secciones s', 's.seccion_id = gs.seccion_id');
+
+        if ((int) ($usuario['rol_id'] ?? 0) === 4) {
+            $builder->where('m.usuario_id', (int) ($usuario['id_usuario'] ?? 0));
+        } elseif ((int) ($usuario['rol_id'] ?? 0) === 5) {
+            $builder->join(
+                'asignacion_grados ag',
+                'ag.grado_seccion_id = acm.grado_seccion_id'
+            )
+                ->join('alumnos al', 'al.alumno_id = ag.alumno_id')
+                ->where('al.usuario_id', (int) ($usuario['id_usuario'] ?? 0))
+                ->distinct();
+        }
+
+        return $builder->orderBy('g.grado_id', 'ASC')
+            ->orderBy('s.nom_seccion', 'ASC')
+            ->orderBy('c.nom_curso', 'ASC')
+            ->get()
+            ->getResultArray();
+    }
 }

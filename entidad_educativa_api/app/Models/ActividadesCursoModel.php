@@ -11,7 +11,7 @@ class ActividadesCursoModel extends Model
     protected $returnType = 'array';
     protected $allowedFields = [
         'asignacion_curso_maestro_id',
-        'bimestre',
+        'bimestre_id',
         'nom_actividad',
         'punteo_maximo',
         'descripcion',
@@ -19,7 +19,9 @@ class ActividadesCursoModel extends Model
 
     public function listarPorAsignacion(int $asignacionId): array
     {
-        return $this->where('asignacion_curso_maestro_id', $asignacionId)
+        return $this->select('actividades_curso.*, bimestres.nombre AS bimestre, bimestres.fecha_inicio, bimestres.fecha_fin')
+            ->join('bimestres', 'bimestres.bimestre_id = actividades_curso.bimestre_id')
+            ->where('asignacion_curso_maestro_id', $asignacionId)
             ->orderBy($this->primaryKey)
             ->findAll();
     }

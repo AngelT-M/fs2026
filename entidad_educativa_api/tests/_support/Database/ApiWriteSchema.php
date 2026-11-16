@@ -1,14 +1,52 @@
 <?php
 
-namespace Tests\Support\Database\Migrations;
+namespace Tests\Support\Database;
 
-use CodeIgniter\Database\Migration;
+use CodeIgniter\Database\Forge;
+use Config\Database;
 
-class ApiWriteSchema extends Migration
+final class ApiWriteSchema
 {
-    protected $DBGroup = 'tests';
+    private Forge $forge;
 
-    public function up(): void
+    public function __construct()
+    {
+        $this->forge = Database::forge('tests');
+    }
+
+    public function resetSchema(): void
+    {
+        foreach ([
+            'calendario_actividades',
+            'examen_enviados',
+            'pagos_realizados',
+            'cargos_alumnos',
+            'pagos',
+            'asistencia',
+            'calificaciones',
+            'actividades_curso',
+            'bimestres',
+            'asignacion_curso_maestro',
+            'asignacion_grados',
+            'grados_secciones',
+            'cursos',
+            'secciones',
+            'grados',
+            'niveles_educativos',
+            'personal_administrativos',
+            'maestros',
+            'alumnos',
+            'token_acceso',
+            'usuarios',
+            'roles',
+        ] as $table) {
+            $this->forge->dropTable($table, true);
+        }
+
+        $this->createTables();
+    }
+
+    private function createTables(): void
     {
         $this->create('roles', 'rol_id', [
             'nom_rol' => $this->varchar(50),
@@ -71,7 +109,7 @@ class ApiWriteSchema extends Migration
             'seccion_id' => $this->integer(),
             'cantidad_estudiantes' => $this->integer(true),
             'ciclo' => $this->integer(),
-        ]);
+        ], [['grado_id', 'seccion_id', 'ciclo']]);
         $this->create('asignacion_grados', 'asignacion_grado_id', [
             'alumno_id' => $this->integer(),
             'grado_seccion_id' => $this->integer(),
@@ -81,9 +119,16 @@ class ApiWriteSchema extends Migration
             'grado_seccion_id' => $this->integer(),
             'curso_id' => $this->integer(),
         ]);
+        $this->create('bimestres', 'bimestre_id', [
+            'ciclo' => $this->integer(),
+            'nombre' => $this->varchar(30),
+            'orden' => $this->integer(),
+            'fecha_inicio' => $this->date(true),
+            'fecha_fin' => $this->date(true),
+        ], [['ciclo', 'nombre']]);
         $this->create('actividades_curso', 'actividad_curso_id', [
             'asignacion_curso_maestro_id' => $this->integer(),
-            'bimestre' => $this->varchar(30),
+            'bimestre_id' => $this->integer(),
             'nom_actividad' => $this->varchar(100),
             'punteo_maximo' => $this->decimal(5, 2),
             'descripcion' => $this->text(true),
@@ -121,6 +166,7 @@ class ApiWriteSchema extends Migration
         ]);
         $this->create('examen_enviados', 'examen_id', [
             'asignacion_curso_maestro_id' => $this->integer(),
+            'bimestre_id' => $this->integer(true),
             'titulo' => $this->varchar(150),
             'mensaje' => $this->text(true),
             'archivo_url' => $this->varchar(255),
@@ -140,35 +186,6 @@ class ApiWriteSchema extends Migration
         ]);
     }
 
-    public function down(): void
-    {
-        foreach ([
-            'calendario_actividades',
-            'examen_enviados',
-            'pagos_realizados',
-            'cargos_alumnos',
-            'pagos',
-            'asistencia',
-            'calificaciones',
-            'actividades_curso',
-            'asignacion_curso_maestro',
-            'asignacion_grados',
-            'grados_secciones',
-            'cursos',
-            'secciones',
-            'grados',
-            'niveles_educativos',
-            'personal_administrativos',
-            'maestros',
-            'alumnos',
-            'token_acceso',
-            'usuarios',
-            'roles',
-        ] as $table) {
-            $this->forge->dropTable($table, true);
-        }
-    }
-
     private function create(string $table, string $primaryKey, array $fields, array $uniqueKeys = []): void
     {
         $this->forge->addField([
@@ -179,7 +196,7 @@ class ApiWriteSchema extends Migration
         foreach ($uniqueKeys as $key) {
             $this->forge->addUniqueKey($key);
         }
-        $this->forge->createTable($table);
+        $this->forge->createTable($table, true);
     }
 
     private function varchar(int $length, bool $nullable = false): array
@@ -202,9 +219,9 @@ class ApiWriteSchema extends Migration
         return ['type' => 'DECIMAL', 'constraint' => "{$precision},{$scale}"];
     }
 
-    private function date(): array
+    private function date(bool $nullable = false): array
     {
-        return ['type' => 'DATE'];
+        return ['type' => 'DATE', 'null' => $nullable];
     }
 
     private function datetime(bool $nullable = false): array

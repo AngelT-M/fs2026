@@ -87,30 +87,67 @@ class CrudController extends ApiController
         if ($datos === null) {
             return $this->respuestaError('El cuerpo debe ser un objeto JSON válido.', 400);
         }
-        if (in_array($resource, ['usuarios', 'alumnos', 'maestros', 'personal'], true)
-            && (! is_string($datos['nom_usuario'] ?? null) || ! is_string($datos['password'] ?? null))) {
-            return $this->respuestaError('El nombre de usuario y la contraseña deben ser texto.', 422);
-        }
         if (! $this->validateData($datos, $this->createRules($resource))) {
             return $this->errorValidacion();
         }
 
+        if (in_array($resource, ['alumnos', 'maestros', 'personal'], true)) {
+            $usuarioId = $this->validarId($datos['usuario_id'] ?? null);
+            if ($usuarioId === null) {
+                return $this->respuestaError('Debes seleccionar una cuenta de usuario válida.', 422);
+            }
+
+            $cuenta = db_connect()->table('usuarios')
+                ->where('usuario_id', $usuarioId)
+                ->where('rol_id', $this->rolParaPerfil($resource, $datos))
+                ->where('estado', 'ACTIVO')
+                ->get()
+                ->getRowArray();
+            if ($cuenta === null) {
+                return $this->respuestaError('La cuenta seleccionada no está disponible para este perfil.', 409);
+            }
+            if ($this->usuarioTienePerfil($usuarioId)) {
+                return $this->respuestaError('La cuenta seleccionada ya está asignada.', 409);
+            }
+        }
+
         $perfil = array_intersect_key($datos, array_flip(self::RESOURCE_FIELDS[$resource] ?? []));
-        $cuenta = [
-            'nom_usuario' => trim($datos['nom_usuario']),
-            'password' => $datos['password'],
-        ];
-        $result = match ($resource) {
-            'usuarios' => model(UsuariosModel::class, false)->crearApi($datos),
-            'alumnos' => model(AlumnosModel::class, false)->registrarAlumnoConUsuario($perfil, $cuenta),
-            'maestros' => model(MaestrosModel::class, false)->registrarMaestroConUsuario($perfil, $cuenta),
-            'personal' => model(PersonalAdministrativosModel::class, false)->registrarPersonalConUsuario($perfil, $cuenta),
-            default => false,
-        };
+        if (in_array($resource, ['alumnos', 'maestros', 'personal'], true)) {
+            $perfil['usuario_id'] = $usuarioId;
+        }
+        $result = $resource === 'usuarios'
+            ? model(UsuariosModel::class, false)->crearApi($datos)
+            : $this->registrarPerfil($resource, $perfil);
 
         return $result === false
             ? $this->respuestaError('No fue posible crear el registro.', 409)
             : $this->respuestaExitosa($result, 201, 'Registro creado.');
+    }
+
+    public function usuariosDisponibles(): ResponseInterface
+    {
+        $recurso = (string) $this->request->getGet('recurso');
+        $rolId = $this->request->getGet('rol_id');
+        $rolesPermitidos = match ($recurso) {
+            'alumnos' => [5],
+            'maestros' => [4],
+            'personal' => [1, 2, 3],
+            default => null,
+        };
+        if ($rolesPermitidos === null) {
+            return $this->respuestaError('El tipo de perfil solicitado no es válido.', 400);
+        }
+        if ($rolId !== null) {
+            $rolId = $this->validarId($rolId);
+            if ($recurso !== 'personal' || $rolId === null || ! in_array($rolId, $rolesPermitidos, true)) {
+                return $this->respuestaError('El rol solicitado no es válido para este perfil.', 400);
+            }
+            $rolesPermitidos = [$rolId];
+        }
+
+        return $this->respuestaExitosa(
+            model(UsuariosModel::class, false)->listarDisponiblesApi($recurso, $rolesPermitidos)
+        );
     }
 
     public function update(string $id): ResponseInterface
@@ -228,6 +265,53 @@ class CrudController extends ApiController
         return (string) $this->request->getUri()->getSegment(2);
     }
 
+    private function rolParaPerfil(string $resource, array $datos): int
+    {
+        if ($resource === 'alumnos') {
+            return 5;
+        }
+        if ($resource === 'maestros') {
+            return 4;
+        }
+
+        return match ($datos['cargo'] ?? '') {
+            'ADMIN' => 1,
+            'DIRECTOR', 'SUBDIRECTOR' => 2,
+            default => 3,
+        };
+    }
+
+    private function usuarioTienePerfil(int $usuarioId): bool
+    {
+        foreach (['alumnos', 'maestros', 'personal_administrativos'] as $tabla) {
+            if (db_connect()->table($tabla)->where('usuario_id', $usuarioId)->countAllResults() > 0) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private function registrarPerfil(string $resource, array $perfil): array|false
+    {
+        $modelo = match ($resource) {
+            'alumnos' => model(AlumnosModel::class, false),
+            'maestros' => model(MaestrosModel::class, false),
+            'personal' => model(PersonalAdministrativosModel::class, false),
+            default => null,
+        };
+        if ($modelo === null) {
+            return false;
+        }
+
+        $db = db_connect();
+        $db->transStart();
+        $id = $modelo->insert($perfil, true);
+        $db->transComplete();
+
+        return $id !== false && $db->transStatus() ? $modelo->find($id) : false;
+    }
+
     private function createRules(string $resource): array
     {
         if ($resource === 'usuarios') {
@@ -240,8 +324,7 @@ class CrudController extends ApiController
         }
 
         $rules = [
-            'nom_usuario' => 'required|max_length[50]|is_unique[usuarios.nom_usuario]',
-            'password' => 'required|min_length[8]|max_length[255]',
+            'usuario_id' => 'required|integer|is_not_unique[usuarios.usuario_id]',
             'nombre' => 'required|max_length[50]',
             'apellido' => 'required|max_length[50]',
             'email' => 'permit_empty|valid_email|max_length[100]',

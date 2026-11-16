@@ -5,11 +5,30 @@ namespace App\Controllers\Api;
 use App\Models\ActividadesCursoModel;
 use App\Models\AlumnosModel;
 use App\Models\AsignacionCursoMaestroModel;
+use App\Models\BimestresModel;
 use App\Models\CalificacionesModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class EvaluacionesController extends ApiController
 {
+    public function alumnosParaBoleta(): ResponseInterface
+    {
+        $asignacionCursoMaestroId = $this->request->getGet('asignacion_curso_maestro_id');
+        if ($asignacionCursoMaestroId !== null) {
+            $asignacionCursoMaestroId = $this->validarId($asignacionCursoMaestroId);
+            if ($asignacionCursoMaestroId === null) {
+                return $this->respuestaError('Identificador de asignación inválido.', 400);
+            }
+        }
+
+        return $this->respuestaExitosa(
+            model(AlumnosModel::class, false)->listarParaBoleta(
+                $this->usuarioActual(),
+                $asignacionCursoMaestroId
+            )
+        );
+    }
+
     public function actividades(string $idAcm): ResponseInterface
     {
         $idAcm = $this->validarId($idAcm);
@@ -36,7 +55,7 @@ class EvaluacionesController extends ApiController
         $datos['asignacion_curso_maestro_id'] = $idAcm;
         if ($error = $this->validarEntrada($datos, [
             'asignacion_curso_maestro_id' => 'required|integer|is_not_unique[asignacion_curso_maestro.asignacion_curso_maestro_id]',
-            'bimestre' => 'required|in_list[1er Bimestre,2do Bimestre,3er Bimestre,4to Bimestre,Recuperacion]',
+            'bimestre_id' => 'required|integer|is_not_unique[bimestres.bimestre_id]',
             'nom_actividad' => 'required|max_length[100]',
             'punteo_maximo' => 'required|decimal|greater_than[0]|less_than_equal_to[999.99]',
             'descripcion' => 'permit_empty|max_length[1000]',
@@ -52,10 +71,16 @@ class EvaluacionesController extends ApiController
         ) {
             return $this->respuestaError('No tienes acceso a esta asignación de curso.', 403);
         }
+        if (! model(BimestresModel::class, false)->perteneceAAsignacion(
+            (int) $datos['bimestre_id'],
+            $idAcm
+        )) {
+            return $this->respuestaError('El periodo seleccionado no corresponde al ciclo escolar de la clase.', 422);
+        }
 
         $actividad = model(ActividadesCursoModel::class, false)->crearActividad([
             'asignacion_curso_maestro_id' => $idAcm,
-            'bimestre' => $datos['bimestre'],
+            'bimestre_id' => (int) $datos['bimestre_id'],
             'nom_actividad' => $datos['nom_actividad'],
             'punteo_maximo' => $datos['punteo_maximo'],
             'descripcion' => $datos['descripcion'] ?? null,
@@ -131,7 +156,7 @@ class EvaluacionesController extends ApiController
         }
 
         return $this->respuestaExitosa(
-            model(CalificacionesModel::class, false)->obtenerBoleta($alumnoId)
+            model(CalificacionesModel::class, false)->obtenerBoleta($alumnoId, $usuario)
         );
     }
 }

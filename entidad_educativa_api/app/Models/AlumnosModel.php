@@ -34,6 +34,36 @@ class AlumnosModel extends Model
             ->findAll($porPagina, ($pagina - 1) * $porPagina);
     }
 
+    public function listarParaBoleta(array $solicitante, ?int $asignacionCursoMaestroId = null): array
+    {
+        $consulta = $this->select('alumnos.alumno_id, alumnos.carne, alumnos.nombre, alumnos.apellido')
+            ->join('usuarios', 'usuarios.usuario_id = alumnos.usuario_id')
+            ->where('usuarios.estado', 'ACTIVO');
+
+        if ((int) ($solicitante['rol_id'] ?? 0) === 4 || $asignacionCursoMaestroId !== null) {
+            $consulta->join('asignacion_grados', 'asignacion_grados.alumno_id = alumnos.alumno_id')
+                ->join(
+                    'asignacion_curso_maestro',
+                    'asignacion_curso_maestro.grado_seccion_id = asignacion_grados.grado_seccion_id'
+                );
+            if ((int) ($solicitante['rol_id'] ?? 0) === 4) {
+                $consulta->join('maestros', 'maestros.maestro_id = asignacion_curso_maestro.maestro_id')
+                    ->where('maestros.usuario_id', (int) ($solicitante['id_usuario'] ?? 0));
+            }
+            if ($asignacionCursoMaestroId !== null) {
+                $consulta->where(
+                    'asignacion_curso_maestro.asignacion_curso_maestro_id',
+                    $asignacionCursoMaestroId
+                );
+            }
+            $consulta->distinct();
+        }
+
+        return $consulta->orderBy('alumnos.apellido')
+            ->orderBy('alumnos.nombre')
+            ->findAll();
+    }
+
     public function buscarApi(int $id, array $solicitante = []): ?array
     {
         if ((int) ($solicitante['rol_id'] ?? 0) === 5) {

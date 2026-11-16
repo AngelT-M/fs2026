@@ -11,6 +11,7 @@ class ExamenEnviadosModel extends Model
     protected $returnType = 'array';
     protected $allowedFields = [
         'asignacion_curso_maestro_id',
+        'bimestre_id',
         'titulo',
         'mensaje',
         'archivo_url',
@@ -19,6 +20,30 @@ class ExamenEnviadosModel extends Model
         'fecha_autorizacion',
         'personal_id',
     ];
+
+    public function listarApi(): array
+    {
+        return $this->select(
+            'examen_enviados.examen_id, examen_enviados.bimestre_id, bimestres.nombre AS bimestre, ' .
+            'examen_enviados.titulo, examen_enviados.mensaje, ' .
+            'examen_enviados.archivo_url, examen_enviados.fecha_envio, examen_enviados.estado, ' .
+            'maestros.nombre AS maestro_nombre, maestros.apellido AS maestro_apellido, ' .
+            'cursos.nom_curso, grados.nom_grado, secciones.nom_seccion, grados_secciones.ciclo'
+        )
+            ->join(
+                'asignacion_curso_maestro',
+                'asignacion_curso_maestro.asignacion_curso_maestro_id = examen_enviados.asignacion_curso_maestro_id'
+            )
+            ->join('maestros', 'maestros.maestro_id = asignacion_curso_maestro.maestro_id')
+            ->join('cursos', 'cursos.curso_id = asignacion_curso_maestro.curso_id')
+            ->join('grados_secciones', 'grados_secciones.grado_seccion_id = asignacion_curso_maestro.grado_seccion_id')
+            ->join('grados', 'grados.grado_id = grados_secciones.grado_id')
+            ->join('secciones', 'secciones.seccion_id = grados_secciones.seccion_id')
+            ->join('bimestres', 'bimestres.bimestre_id = examen_enviados.bimestre_id', 'left')
+            ->orderBy('grados_secciones.ciclo', 'DESC')
+            ->orderBy('examen_enviados.fecha_envio', 'DESC')
+            ->findAll();
+    }
 
     public function maestroPuedeGestionar(int $asignacionId, array $usuario): bool
     {

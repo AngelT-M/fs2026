@@ -53,40 +53,47 @@
     <body>
         <h2>Api Write Operations</h2>
         <ul>
-            <li class="success">Profile creation creates account and hashes password</li>
+            <li class="success">Profile creation links an existing account</li>
+            <li class="success">Profile creation rejects assigned or wrong role accounts</li>
+            <li class="success">Available accounts are unassigned and match profile role</li>
             <li class="success">User creation hashes password and omits it from response</li>
-            <li class="success">Teacher and staff profiles create their accounts</li>
+            <li class="success">Teacher and staff profiles link their accounts</li>
+            <li class="success">Exam list includes all statuses and class information</li>
+            <li class="success">Receipt list includes student and payment description</li>
             <li class="success">User put and delete deactivate tokens</li>
+            <li class="success">Inactive users can be listed and reactivated</li>
             <li class="success">Profile put and delete deactivate its account</li>
             <li class="success">Students cannot read teacher or staff profiles</li>
+            <li class="success">Students cannot read attendance history</li>
             <li class="success">Student list only returns its own profile</li>
+            <li class="success">Teacher boleta directory only returns assigned students</li>
+            <li class="success">Teacher boleta directory can be filtered by assigned course</li>
+            <li class="success">Students cannot read boleta student directory</li>
+            <li class="success">Teacher boleta only contains grades from their assigned courses</li>
+            <li class="success">Student course list only includes its assigned class</li>
             <li class="success">Academic writes open room and create assignments</li>
-            <li class="success">Activity and grade writes</li>
+            <li class="success">Opening duplicate room for same grade section and cycle is rejected</li>
+            <li class="success">Empty classroom can be deleted</li>
+            <li class="success">Classroom with assignments cannot be deleted</li>
+            <li class="defect">Bimestres can be managed by school cycle</li>
+            <li class="defect">Activity and grade writes</li>
             <li class="success">Attendance write retains classroom assignment</li>
             <li class="success">Attendance reads return class list and student history</li>
+            <li class="success">Attendance history rejects invalid month filter</li>
             <li class="success">Exam submission and authorization</li>
             <li class="success">Exam submission requires valid file url</li>
-            <li class="success">Partial payment and calendar event writes</li>
-            <li class="success">Payment receipt and bulk charge generation</li>
-            <li class="success">Password change and dashboard summary</li>
+            <li class="success">Exam submission requires valid bimester</li>
+            <li class="success">Administrators cannot submit exams</li>
+            <li class="defect">Partial payment and calendar event writes</li>
+            <li class="defect">Payment receipt and bulk charge generation</li>
+            <li class="success">Managers can create grade specific payment definitions</li>
+            <li class="success">Students cannot create payment definitions</li>
+            <li class="success">Payment options are filtered by grade</li>
+            <li class="defect">Password change and dashboard summary</li>
             <li class="success">Courses can be created and updated by admin</li>
             <li class="success">Invalid write is rejected without database changes</li>
             <li class="success">Login creates token for valid credentials</li>
             <li class="success">Logout revokes the presented token</li>
-        </ul>
-        <h2>Example Database</h2>
-        <ul>
-            <li class="success">Model find all</li>
-            <li class="success">Soft delete leaves row</li>
-        </ul>
-        <h2>Example Session</h2>
-        <ul>
-            <li class="success">Session simple</li>
-        </ul>
-        <h2>Health</h2>
-        <ul>
-            <li class="success">Is defined app path</li>
-            <li class="success">Base url has been set</li>
         </ul>
     </body>
 </html>

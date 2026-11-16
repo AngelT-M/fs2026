@@ -76,16 +76,25 @@ class CalificacionesModel extends Model
         return $this->db->transStatus() ? $guardadas : false;
     }
 
-    public function obtenerBoleta(int $alumnoId): array
+    public function obtenerBoleta(int $alumnoId, array $usuario = []): array
     {
-        return $this->select('calificaciones.calificacion_id, calificaciones.punteo_obtenido, calificaciones.fecha_registro, actividades_curso.bimestre, actividades_curso.nom_actividad, actividades_curso.punteo_maximo, cursos.nom_curso')
+        $consulta = $this->select('calificaciones.calificacion_id, calificaciones.punteo_obtenido, calificaciones.fecha_registro, bimestres.nombre AS bimestre, actividades_curso.bimestre_id, actividades_curso.nom_actividad, actividades_curso.punteo_maximo, cursos.nom_curso')
             ->join('actividades_curso', 'actividades_curso.actividad_curso_id = calificaciones.actividad_curso_id')
+            ->join('bimestres', 'bimestres.bimestre_id = actividades_curso.bimestre_id')
             ->join('asignacion_grados', 'asignacion_grados.asignacion_grado_id = calificaciones.asignacion_grado_id')
             ->join('asignacion_curso_maestro', 'asignacion_curso_maestro.asignacion_curso_maestro_id = actividades_curso.asignacion_curso_maestro_id')
             ->join('cursos', 'cursos.curso_id = asignacion_curso_maestro.curso_id')
-            ->where('asignacion_grados.alumno_id', $alumnoId)
-            ->orderBy('actividades_curso.bimestre')
-            ->orderBy('cursos.nom_curso')
+            ->where('asignacion_grados.alumno_id', $alumnoId);
+
+        if ((int) ($usuario['rol_id'] ?? 0) === 4) {
+            $consulta->join('maestros', 'maestros.maestro_id = asignacion_curso_maestro.maestro_id')
+                ->where('maestros.usuario_id', (int) ($usuario['id_usuario'] ?? 0));
+        }
+
+        return $consulta->orderBy('cursos.nom_curso')
+            ->orderBy('bimestres.orden')
+            ->orderBy('calificaciones.fecha_registro')
+            ->orderBy('calificaciones.calificacion_id')
             ->findAll();
     }
 

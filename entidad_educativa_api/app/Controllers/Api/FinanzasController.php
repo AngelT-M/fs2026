@@ -4,6 +4,7 @@ namespace App\Controllers\Api;
 
 use App\Models\CalendarioActividadesModel;
 use App\Models\CargosAlumnosModel;
+use App\Models\PagosModel;
 use App\Models\PagosRealizadosModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
@@ -71,6 +72,43 @@ class FinanzasController extends ApiController
             : $this->respuestaError($resultado['message'], $resultado['status']);
     }
 
+    public function pagosPorGrado(string $gradoId): ResponseInterface
+    {
+        $gradoId = $this->validarId($gradoId);
+        if ($gradoId === null) {
+            return $this->respuestaError('Identificador de grado inválido.', 400);
+        }
+
+        if (db_connect()->table('grados')->where('grado_id', $gradoId)->countAllResults() === 0) {
+            return $this->respuestaError('No se encontró el grado solicitado.', 404);
+        }
+
+        return $this->respuestaExitosa(
+            model(PagosModel::class, false)->listarPorGrado($gradoId)
+        );
+    }
+
+    public function crearPago(): ResponseInterface
+    {
+        $datos = $this->datosEntrada();
+        if ($datos === null) {
+            return $this->respuestaError('El cuerpo debe ser un objeto JSON válido.', 400);
+        }
+        if ($error = $this->validarEntrada($datos, [
+            'descripcion' => 'required|max_length[150]',
+            'cantidad_pagos' => 'required|integer|greater_than[0]',
+            'monto_base' => 'required|decimal|greater_than[0]',
+            'grado_id' => 'required|integer|is_not_unique[grados.grado_id]',
+        ])) {
+            return $error;
+        }
+
+        $pago = model(PagosModel::class, false)->crearApi($datos);
+        return $pago === false
+            ? $this->respuestaError('No fue posible crear la cuota.', 409)
+            : $this->respuestaExitosa($pago, 201, 'Cuota creada.');
+    }
+
     public function obtenerComprobante(string $pagoRealizadoId): ResponseInterface
     {
         $pagoRealizadoId = $this->validarId($pagoRealizadoId);
@@ -82,6 +120,13 @@ class FinanzasController extends ApiController
         return $comprobante === null
             ? $this->respuestaError('No se encontró el comprobante solicitado.', 404)
             : $this->respuestaExitosa($comprobante);
+    }
+
+    public function listarComprobantes(): ResponseInterface
+    {
+        return $this->respuestaExitosa(
+            model(PagosRealizadosModel::class, false)->listarComprobantes()
+        );
     }
 
     public function calendario(): ResponseInterface

@@ -11,6 +11,20 @@ class PagosRealizadosModel extends Model
     protected $returnType = 'array';
     protected $allowedFields = ['personal_id', 'cargo_id', 'monto_pagado', 'fecha_pago'];
 
+    public function listarComprobantes(): array
+    {
+        return $this->db->table('pagos_realizados pr')
+            ->select('pr.pago_realizado_id, pr.monto_pagado, pr.fecha_pago, p.descripcion AS concepto, a.nombre AS alumno_nombre, a.apellido AS alumno_apellido, a.carne')
+            ->join('cargos_alumnos ca', 'ca.cargo_id = pr.cargo_id')
+            ->join('pagos p', 'p.pago_id = ca.pago_id')
+            ->join('asignacion_grados ag', 'ag.asignacion_grado_id = ca.asignacion_grado_id')
+            ->join('alumnos a', 'a.alumno_id = ag.alumno_id')
+            ->orderBy('pr.fecha_pago', 'DESC')
+            ->limit(100)
+            ->get()
+            ->getResultArray();
+    }
+
     public function obtenerComprobante(int $pagoRealizadoId): ?array
     {
         return $this->db->table('pagos_realizados pr')

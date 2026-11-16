@@ -36,8 +36,15 @@ class AsistenciaController extends ApiController
             return $this->respuestaError('Identificador de alumno inválido.', 400);
         }
 
+        $mes = $this->request->getGet('mes');
+        if ($mes !== null) {
+            if (! is_string($mes) || ! preg_match('/^\d{4}-(0[1-9]|1[0-2])$/', $mes)) {
+                return $this->respuestaError('El mes debe tener el formato YYYY-MM.', 400);
+            }
+        }
+
         $historial = model(AsistenciaModel::class, false)
-            ->obtenerHistorialAlumno($alumnoId, $this->usuarioActual());
+            ->obtenerHistorialAlumno($alumnoId, $this->usuarioActual(), $mes);
         return $historial === false
             ? $this->respuestaError('No se encontró el alumno o no tienes acceso a su historial.', 404)
             : $this->respuestaExitosa($historial);

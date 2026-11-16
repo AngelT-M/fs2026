@@ -24,8 +24,24 @@ class UsuariosModel extends Model
             ->where('usuarios.estado', 'ACTIVO')
             ->first();
 
-        if ($usuario === null || ! password_verify($password, $usuario['password'])) {
+        if ($usuario === null) {
             return null;
+        }
+
+        $passwordGuardado = (string) $usuario['password'];
+        $esHash = password_get_info($passwordGuardado)['algoName'] !== 'unknown';
+        $passwordValida = $esHash
+            ? password_verify($password, $passwordGuardado)
+            : hash_equals($passwordGuardado, $password);
+
+        if (! $passwordValida) {
+            return null;
+        }
+
+        if (! $esHash && ! $this->update((int) $usuario['usuario_id'], [
+            'password' => password_hash($password, PASSWORD_DEFAULT),
+        ])) {
+            return false;
         }
 
         $token = model(TokenAccesoModel::class, false)->crearToken((int) $usuario['usuario_id']);
@@ -83,8 +99,7 @@ class UsuariosModel extends Model
             $this->where('usuario_id', (int) ($solicitante['id_usuario'] ?? 0));
         }
 
-        $usuarios = $this->where('estado', 'ACTIVO')
-            ->orderBy($this->primaryKey, 'ASC')
+        $usuarios = $this->orderBy($this->primaryKey, 'ASC')
             ->findAll($porPagina, ($pagina - 1) * $porPagina);
         foreach ($usuarios as &$usuario) {
             unset($usuario['password']);
@@ -93,13 +108,39 @@ class UsuariosModel extends Model
         return $usuarios;
     }
 
+    public function listarDisponiblesApi(string $recurso, array $rolesPermitidos): array
+    {
+        if (! in_array($recurso, ['alumnos', 'maestros', 'personal'], true)) {
+            throw new \InvalidArgumentException('Recurso de perfil inválido.');
+        }
+        $alumnosAsignados = $this->db->table('alumnos')
+            ->select('usuario_id')
+            ->where('usuario_id IS NOT NULL', null, false);
+        $maestrosAsignados = $this->db->table('maestros')
+            ->select('usuario_id')
+            ->where('usuario_id IS NOT NULL', null, false);
+        $personalAsignado = $this->db->table('personal_administrativos')
+            ->select('usuario_id')
+            ->where('usuario_id IS NOT NULL', null, false);
+        $usuariosAsignados = $alumnosAsignados
+            ->union($maestrosAsignados)
+            ->union($personalAsignado);
+
+        return $this->select('usuario_id, nom_usuario, rol_id')
+            ->where('estado', 'ACTIVO')
+            ->whereIn('rol_id', $rolesPermitidos)
+            ->whereNotIn('usuario_id', $usuariosAsignados)
+            ->orderBy($this->primaryKey, 'ASC')
+            ->findAll();
+    }
+
     public function buscarApi(int $id, array $solicitante): ?array
     {
         if ((int) ($solicitante['rol_id'] ?? 0) === 5) {
             $this->where('usuario_id', (int) ($solicitante['id_usuario'] ?? 0));
         }
 
-        $usuario = $this->where('estado', 'ACTIVO')->find($id);
+        $usuario = $this->find($id);
         if ($usuario !== null) {
             unset($usuario['password']);
         }

@@ -21,8 +21,11 @@ class CalendarioActividadesModel extends Model
 
     public function eventosParaUsuario(array $usuario): array
     {
+        $builder = $this->select('calendario_actividades.*, niveles_educativos.nom_nivel')
+            ->join('niveles_educativos', 'niveles_educativos.nivel_id = calendario_actividades.nivel_id', 'left');
+
         if ((int) ($usuario['rol_id'] ?? 0) !== 5) {
-            return $this->orderBy('fecha_inicio', 'ASC')->findAll();
+            return $builder->orderBy('calendario_actividades.fecha_inicio', 'ASC')->findAll();
         }
 
         $alumno = model(AlumnosModel::class, false)
@@ -33,12 +36,12 @@ class CalendarioActividadesModel extends Model
             ? null
             : model(AsignacionGradosModel::class, false)->aulaDeAlumno((int) $alumno['alumno_id']);
 
-        $this->groupStart()->where('nivel_id', null);
+        $builder->groupStart()->where('calendario_actividades.nivel_id', null);
         if ($aula !== null) {
-            $this->orWhere('nivel_id', (int) $aula['nivel_id']);
+            $builder->orWhere('calendario_actividades.nivel_id', (int) $aula['nivel_id']);
         }
 
-        return $this->groupEnd()->orderBy('fecha_inicio', 'ASC')->findAll();
+        return $builder->groupEnd()->orderBy('calendario_actividades.fecha_inicio', 'ASC')->findAll();
     }
 
     public function crearEvento(array $datos, int $usuarioId): array

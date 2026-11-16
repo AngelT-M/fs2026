@@ -32,11 +32,17 @@ class CargosAlumnosModel extends Model
         return $this->db->table('cargos_alumnos ca')
             ->select(
                 'ca.cargo_id, ca.monto_cobrar, ca.fecha_vencimiento, ca.estado, pagos.descripcion, pagos.cantidad_pagos, '
+                . 'al.carne, al.nombre AS alumno_nombre, al.apellido AS alumno_apellido, '
+                . 'g.nom_grado, s.nom_seccion, '
                 . 'GREATEST(ca.monto_cobrar - COALESCE((SELECT SUM(pr.monto_pagado) FROM pagos_realizados pr '
                 . 'WHERE pr.cargo_id = ca.cargo_id), 0), 0) AS saldo_pendiente',
                 false
             )
             ->join('asignacion_grados', 'asignacion_grados.asignacion_grado_id = ca.asignacion_grado_id')
+            ->join('alumnos al', 'al.alumno_id = asignacion_grados.alumno_id', 'left')
+            ->join('grados_secciones gs', 'gs.grado_seccion_id = asignacion_grados.grado_seccion_id', 'left')
+            ->join('grados g', 'g.grado_id = gs.grado_id', 'left')
+            ->join('secciones s', 's.seccion_id = gs.seccion_id', 'left')
             ->join('pagos', 'pagos.pago_id = ca.pago_id')
             ->where('asignacion_grados.alumno_id', $alumnoId)
             ->orderBy('ca.fecha_vencimiento')

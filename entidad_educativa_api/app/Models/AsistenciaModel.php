@@ -37,21 +37,31 @@ class AsistenciaModel extends Model
             ->getResultArray();
     }
 
-    public function obtenerHistorialAlumno(int $alumnoId, array $usuario = []): array|false
-    {
+    public function obtenerHistorialAlumno(
+        int $alumnoId,
+        array $usuario = [],
+        ?string $mes = null
+    ): array|false {
         if (! $this->puedeConsultarAlumno($alumnoId, $usuario)) {
             return false;
         }
 
-        $historial = $this->db->table('asistencia asi')
+        $consulta = $this->db->table('asistencia asi')
             ->select('asi.asistencia_id, asi.fecha, asi.estado, asi.asignacion_grado_id, gs.ciclo, g.nom_grado, s.nom_seccion')
             ->join('asignacion_grados ag', 'ag.asignacion_grado_id = asi.asignacion_grado_id')
             ->join('alumnos al', 'al.alumno_id = ag.alumno_id AND al.usuario_id = asi.usuario_id')
             ->join('grados_secciones gs', 'gs.grado_seccion_id = ag.grado_seccion_id')
             ->join('grados g', 'g.grado_id = gs.grado_id')
             ->join('secciones s', 's.seccion_id = gs.seccion_id')
-            ->where('al.alumno_id', $alumnoId)
-            ->orderBy('asi.fecha', 'DESC')
+            ->where('al.alumno_id', $alumnoId);
+        if ($mes !== null) {
+            $inicioMes = $mes . '-01';
+            $finMes = (new \DateTimeImmutable($inicioMes))->modify('last day of this month')->format('Y-m-d');
+            $consulta->where('asi.fecha >=', $inicioMes)
+                ->where('asi.fecha <=', $finMes);
+        }
+
+        $historial = $consulta->orderBy('asi.fecha', 'DESC')
             ->get()
             ->getResultArray();
 

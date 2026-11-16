@@ -3,10 +3,18 @@
 namespace App\Controllers\Api;
 
 use App\Models\ExamenEnviadosModel;
+use App\Models\BimestresModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class ExamenesController extends ApiController
 {
+    public function listar(): ResponseInterface
+    {
+        return $this->respuestaExitosa(
+            model(ExamenEnviadosModel::class, false)->listarApi()
+        );
+    }
+
     public function crear(): ResponseInterface
     {
         $datos = $this->datosEntrada();
@@ -16,6 +24,7 @@ class ExamenesController extends ApiController
 
         if ($error = $this->validarEntrada($datos, [
             'asignacion_curso_maestro_id' => 'required|integer|is_not_unique[asignacion_curso_maestro.asignacion_curso_maestro_id]',
+            'bimestre_id' => 'required|integer|is_not_unique[bimestres.bimestre_id]',
             'titulo' => 'required|max_length[150]',
             'mensaje' => 'permit_empty|max_length[5000]',
             'archivo_url' => 'required|valid_url|max_length[255]',
@@ -29,9 +38,16 @@ class ExamenesController extends ApiController
         if (! $model->maestroPuedeGestionar($asignacionId, $usuario)) {
             return $this->respuestaError('No tienes acceso a esta asignación de curso.', 403);
         }
+        if (! model(BimestresModel::class, false)->perteneceAAsignacion(
+            (int) $datos['bimestre_id'],
+            $asignacionId
+        )) {
+            return $this->respuestaError('El periodo seleccionado no corresponde al ciclo escolar de la clase.', 422);
+        }
 
         $examen = $model->enviarExamen([
             'asignacion_curso_maestro_id' => $asignacionId,
+            'bimestre_id' => (int) $datos['bimestre_id'],
             'titulo' => trim($datos['titulo']),
             'mensaje' => $datos['mensaje'] ?? null,
             'archivo_url' => trim($datos['archivo_url']),
